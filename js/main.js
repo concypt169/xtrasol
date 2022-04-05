@@ -1,6 +1,6 @@
 
  jQuery(document).ready(function(){
-   console.log('5reaady');
+   //console.log('5reaady');
 var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -48,7 +48,7 @@ jQuery('.tab-content').hide();
 jQuery('.tab-content:first').show();
 
 // Click function
-console.log(jQuery('.specialization-work').attr('class'));
+//console.log(jQuery('.specialization-work').attr('class'));
 jQuery('#tabs-nav li').mouseenter(function(){
   
  var selectedId = jQuery(this).children("a").attr("href");
@@ -86,17 +86,18 @@ var swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
 },
-  onInit: function(sw){
-    var offer = document.querySelector('#numberSlides');
-    console.log("hello "+offer);
-    offer.innerHTML = (sw.activeIndex +  1) + '/' + sw.slides.length;
-  },
-  onSlideChangeEnd: function(sw){
-    var offer = document.querySelector('#numberSlides');
-    offer.innerHTML = (sw.activeIndex +  1) + '/' + sw.slides.length;
-  }
-});
+ on: {
+    init: function(sw) {
+      var offer = document.querySelector('#numberSlides');
+      offer.innerHTML = (sw.activeIndex +  1) + '/' + sw.slides.length;
+    },
 
+    slideChange: function (sw) { 
+      var offer = document.querySelector('#numberSlides');
+      offer.innerHTML = (sw.activeIndex +  1) + '/' + sw.slides.length;
+    }
+  },
+});
 
 
 // +++++++++++++++++++++++++Third-swiper-slider
