@@ -1,0 +1,511 @@
+/******** Fonts ********/
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+    url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+    url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Italic.woff2') format('woff2'),
+    url('../fonts/Poppins-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+    url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+    url('../fonts/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+    }
+    /********** End-font *************/
+    a, a:hover, a:focus, a:active {
+        text-decoration: none !important;
+        color: inherit;
+        cursor: pointer !important;
+    }
+    .careers-header-section h5:after {
+        content: "";
+        left: 0;
+        bottom: 11px;
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background: #000;
+    }
+    .careers-header-section {
+        padding-top: 53px;
+        padding-bottom: 64px;
+    }
+    .careers-header-section h5 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 98.5%;
+        color: #000000;
+        position: relative;
+        padding-left: 75px;
+    }
+    .careers-header-section h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 98.5%;
+        color: #000000;
+        margin-top: 42px;
+        width: 261px;
+    }
+    .careers-header-section p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 136%;
+        color: #000000;
+        margin-top: 22px;
+    }
+    .container.wraper-gaid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .together-inside1 img {
+        width: 100%;
+        height: auto;
+    }
+    .together-inside2 img {
+        width: 100%;
+        height: auto;
+        max-width: 114px;
+    }
+    .together-inside1 {
+        padding-bottom: 20px;
+    }
+    .together-inside3 img {
+        width: 100%;
+        height: auto;
+        max-width: 196px;
+    }
+    .together-inside2 {
+        padding-right: 37px;
+    }
+    /************* collaborative-section **************/
+    .collaborative-section {
+        padding-top: 86px;
+        padding-bottom: 167px;
+        background: #000000;
+    }
+    .collaborative-inside h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-size: 30px;
+        line-height: 45px;
+        line-height: 75px;
+        color: #FFFFFF;
+    }
+    .collaborative-inside p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .position-txt h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 100px;
+        color: #000000;
+        opacity: 0.05;
+    }
+    .position-txt h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 38px;
+        color: #000000;
+        position: absolute;
+        top: 32px;
+        left: 53px;
+    }
+    .position-txt {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: relative;
+        margin-top: 50px;
+    }
+    .together-image {
+        margin-top: -120px;
+    }
+    .senior-wrapper {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .senior-slide {
+        border-bottom: 1px solid #00000036;
+        margin-bottom: 22px;
+    }
+    .senior-section {
+        padding-top: 42px;
+        padding-bottom: 91px;
+    }
+    .senior-slide a h2 {
+        background-image: url(../images/Group-34.png);
+        background-position: right;
+        width: fit-content;
+        padding-right: 54px;
+        background-position-y: 26px;
+        background-repeat: no-repeat;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 60px;
+        color: #000000;
+        padding-bottom: 21px;
+        transition-duration: .5s;
+    }
+
+    /*========================================================================================================================*/
+    /* Mobile devices (mobiles, 450px and up) */
+    @media screen and (min-width: 450px) {}
+    /* End Mobile devices (mobiles, 450px and up) */
+    /*========================================================================================================================*/
+    /* Mobile devices (mobiles, 576px and up) */
+    @media screen and (min-width: 576px) {}
+    /* End Mobile devices (mobiles, 576px and up) */
+    /*========================================================================================================================*/
+    /* Tab devices (Tabs, 768px and up) */
+    @media screen and (min-width: 768px) {
+        
+    .position-txt h1 {
+        font-size: 132px;
+        line-height: 100px;
+    }
+    .position-txt h2 {
+        font-size: 48px;
+        top: 28px;
+        left: 95px;
+    }
+    .together-inside3 img {
+        max-width: 417px;
+    }
+    .together-inside2 img {
+        max-width: 242px;
+    }
+    }
+    /* End Tab devices (Tabs, 768px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 992px and up) */
+    @media screen and (min-width: 992px) {
+        .collaborative-set {
+            display: grid;
+            grid-template-columns: 45% 47%;
+            grid-gap: 77px;
+            color: #fff;
+        }
+        
+    .careers-header-section h5 {
+        font-size: 22px;
+        line-height: 98.5%;
+        padding-left: 75px;
+    }
+    .careers-header-section h1 {
+        font-size: 90px;
+        line-height: 98.5%;
+        margin-top: 73px;
+        width: 505px;
+    }
+    .careers-header-section p {
+        font-size: 34px;
+        line-height: 136%;
+        margin-top: 73px;
+    }
+        /************* collaborative-section **************/
+    .collaborative-section {
+        padding-top: 138px;
+        padding-bottom: 242px;
+        background: #000000;
+    }
+    .collaborative-inside h2 {
+        font-size: 42px;
+        line-height: 75px;
+    }
+    .collaborative-inside p {
+        font-size: 22px;
+        line-height: 42px;
+    }
+    
+    .together-inside2 img {
+        width: 100%;
+        height: auto;
+        max-width: 316px;
+    }
+    .together-inside3 img {
+        width: 100%;
+        height: auto;
+        max-width: 542px;
+    }
+    .position-txt h1 {
+        font-size: 163px;
+        line-height: 350px;
+    }
+    .position-txt h2 {
+        font-size: 68px;
+        line-height: 110px;
+        top: 111px;
+        left: 146px;
+    }
+    .position-txt {
+        margin-top: 117px;
+    }
+        .together-inside2 {
+            padding-right: 61px;
+        }
+        .together-inside1 {
+            padding-bottom: 68px;
+        }
+        .together-image {
+            margin-top: -198px;
+        }
+        .senior-wrapper {
+            grid-template-columns: auto auto;
+        }
+        .senior-slide {
+            margin-bottom: 73px;
+        }
+        .senior-section {
+            padding-top: 73px;
+            padding-bottom: 292px;
+        }
+        .senior-slide a h2 {
+            background-image: url(../images/career-69.png);
+            padding-right: 76px;
+            background-position-y: 26px;
+            font-size: 26px;
+            line-height: 60px;
+            padding-bottom: 76px;
+        }
+        /* .senior-slide a h2:hover {
+            padding-right: 85px;
+        } */
+    }
+    /* End Desktop devices (Desktops, 992px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1400px and up) */
+    @media screen and (min-width: 1400px) {
+         /************* collaborative-section **************/
+         .collaborative-set {
+            grid-template-columns: 47% 47%;
+            grid-gap: 77px;
+        }
+    .collaborative-section {
+        padding-top: 138px;
+        padding-bottom: 242px;
+        background: #000000;
+    }
+    .collaborative-inside h2 {
+        font-size: 50px;
+        line-height: 75px;
+    }
+    .collaborative-inside p {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .position-txt h1 {
+        font-size: 300px;
+        line-height: 450px;
+    }
+    .position-txt h2 {
+        font-size: 90px;
+        line-height: 135px;
+        top: 150px;
+        left: 319px;
+    }
+    .position-txt {
+        margin-top: 117px;
+    }
+        .together-inside2 {
+            padding-right: 61px;
+        }
+        .together-inside1 {
+            padding-bottom: 68px;
+        }
+        .together-image {
+            margin-top: -198px;
+        }
+        .senior-wrapper {
+            grid-template-columns: auto auto;
+        }
+        .senior-slide {
+            margin-bottom: 73px;
+        }
+        .senior-section {
+            padding-top: 73px;
+        }
+        .senior-slide a h2 {
+            background-image: url(../images/career-69.png);
+            padding-right: 76px;
+            background-position-y: 26px;
+            font-size: 40px;
+            line-height: 60px;
+            padding-bottom: 76px;
+        }
+            
+    .together-inside2 img {
+        width: 100%;
+        height: auto;
+        max-width: 443px;
+    }
+    .together-inside3 img {
+        width: 100%;
+        height: auto;
+        max-width: 776px;
+    }
+    }
+    /* End Desktop devices (Desktops, 1400px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1600px and up) */
+    @media screen and (min-width: 1600px) {}
+    /* End Desktop devices (Desktops, 1600px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1900px and up) */
+    @media screen and (min-width: 1900px) {}
+    /* End Desktop devices (Desktops, 1900px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 2550px and up) */
+    @media screen and (min-width: 2550px) {}
+    /* End Desktop devices (Desktops, 2550px and up)
+    /*========================================================================================================================*/

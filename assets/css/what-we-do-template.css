@@ -1,0 +1,477 @@
+/******** Fonts ********/
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+    url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+    url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Italic.woff2') format('woff2'),
+    url('../fonts/Poppins-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+    url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+    url('../fonts/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+    }
+    /********** End-font *************/
+    a, a:hover, a:focus, a:active {
+        text-decoration: none !important;
+        color: inherit;
+        cursor: pointer !important;
+    }
+    /******************* What-we-header-section *********************/
+    .what-header-section {
+    padding-top: 96px;
+    padding-bottom: 59px;
+    }
+    .what-rape {
+        padding-top: 49px;
+        text-align: left;
+    }
+    .what-header-section h5:after {
+        content: "";
+        left: 0;
+        bottom: 6px;
+        position: absolute;
+        width: 33px;
+        height: 2px;
+        background: #000;
+    }
+    .what-header-section h5 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 98.5%;
+        color: #000000;
+        position: relative;
+        padding-left: 45px;
+    }
+    .what-header-section h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 111.5%;
+        color: #000000;
+        margin-top: 35px;
+        width: 300px;
+    }
+    .what-header-section p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 136%;
+        color: #000000;
+        margin-top: 26px;
+        width: 338px;
+    }
+    /************** What-Inside ****************/
+    .what-inside {
+        display: block;
+        padding-bottom: 107px;
+    }
+    .what-img a img {
+        width: 100%;
+        height: auto;
+        max-width: 652px;
+    }
+    .what-rape a h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        color: #000000;
+    }
+    .what-rape p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 136%;
+        color: #000000;
+        margin-top: 20px;
+    }
+    .what-rape a h6 {
+        background-image: url(../images/Group-34.png);
+        background-repeat: no-repeat;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 98.5%;
+        letter-spacing: 0.265em;
+        color: #000000;
+        width: 275px;
+        background-position: right;
+        margin-top: 39px;
+        float: left;
+    }
+    /************ Holistic-Approach ************/
+    .Holistic-Approach {
+        padding-top: 53px;
+        padding-bottom: 163px;
+        background: #F2F2F2;
+    }
+    .repeter-wrape {
+        display: block;
+    }
+    .inside-title h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 114%;
+        color: #000000;
+        padding-left: 73px;
+        width: 314px;
+    }
+    .repeter-data {
+        margin-top: 49px;
+        width: 100%;
+        max-width: 348px;
+        height: 451px;
+        color: #000;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 53px;
+    }
+    .repeter-data:hover {
+        background: #000000;
+        color: #fff;
+    }
+    .repeter-data h5 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        background: #fff;
+        border-radius: 50%;
+        width: 68px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .repeter-data h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        margin-top: 16px;
+    }
+    .repeter-data p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 146%;
+        margin-top: 15px;
+        width: 256px;
+    }
+
+    /*========================================================================================================================*/
+    /* Mobile devices (mobiles, 450px and up) */
+    @media screen and (min-width: 450px) {}
+    /* End Mobile devices (mobiles, 450px and up) */
+    /*========================================================================================================================*/
+    /* Mobile devices (mobiles, 576px and up) */
+    @media screen and (min-width: 576px) {}
+    /* End Mobile devices (mobiles, 576px and up) */
+    /*========================================================================================================================*/
+    /* Tab devices (Tabs, 768px and up) */
+    @media screen and (min-width: 768px) {
+        .what-header-section h1 {
+            width: 396px;
+        }
+        .what-header-section p {
+            width: 444px;
+        }
+    }
+    /* End Tab devices (Tabs, 768px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 992px and up) */
+    @media screen and (min-width: 992px) {
+        /******************* What-we-header-section *********************/
+    .what-header-section h5:after {
+        bottom: 15px;
+        width: 50px;
+    }
+    .what-header-section {
+        padding-top: 58px;
+        padding-bottom: 70px;
+    }
+    .what-rape {
+        padding-top: unset;
+        text-align: left;
+    }
+    .what-middle-section {
+        padding-bottom: 102px;
+    }  
+    .what-header-section h5 {
+        font-size: 22px;
+        line-height: 33px;
+        padding-left: 75px;
+    }
+    .what-header-section h1 {
+        font-size: 90px;
+        line-height: 98.5%;
+        margin-top: 62px;
+        width: unset;
+    }
+    .what-header-section p {
+        font-size: 34px;
+        line-height: 136%;
+        margin-top: 73px;
+        width: unset;
+    }
+    /************** What-Inside ****************/
+    .what-inside {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 78px;
+        padding-bottom: 107px;
+    }
+    
+    .what-rape a h2 {
+        font-size: 60px;
+        line-height: 90px;
+    }
+    .what-rape p {
+        font-size: 34px;
+        line-height: 148%;
+        margin-top: 29px;
+        width: 590px;
+    }
+    
+    .what-rape a h6 {
+        font-size: 16px;
+        line-height: 98.5%;
+        width: 300px;
+        margin-top: 51px;
+    }
+    /************ Holistic-Approach ************/
+    .Holistic-Approach {
+        padding-top: 153px;
+        padding-bottom: 479px;
+    }
+    .repeter-wrape {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+    .inside-title h1 {
+        font-size: 90px;
+        line-height: 114%;
+        padding-left: unset;
+        width: unset;
+    }
+    .repeter-data {
+        margin-top: 108px;
+        max-width: 460px;
+        height: 567px;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+    .repeter-data:hover {
+        background: #000000;
+        color: #fff;
+    }
+    .repeter-data h5 {
+        font-size: 30px;
+        line-height: 45px;
+        background: #fff;
+        border-radius: 50%;
+        width: 68px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .repeter-data h1 {
+        font-size: 30px;
+        line-height: 45px;
+        margin-top: 44px;
+    }
+    .repeter-data p {
+        font-size: 22px;
+        line-height: 188%;
+        margin-top: 19px;
+        width: 270px;
+    }
+    }
+    
+    /* End Desktop devices (Desktops, 992px and up)
+     /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1280px and up) */
+    @media screen and (min-width: 1280px) {
+        .repeter-data {
+            padding-left: unset;
+        }
+    .repeter-data p {
+        width: 295px;
+    }
+    }
+    /* End Desktop devices (Desktops, 1280px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1400px and up) */
+    @media screen and (min-width: 1400px) {
+    .repeter-wrape {
+        grid-gap: 85px;
+    }
+    }
+    /* End Desktop devices (Desktops, 1400px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1600px and up) */
+    @media screen and (min-width: 1600px) {}
+    /* End Desktop devices (Desktops, 1600px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1900px and up) */
+    @media screen and (min-width: 1900px) {}
+    /* End Desktop devices (Desktops, 1900px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 2550px and up) */
+    @media screen and (min-width: 2550px) {}
+    /* End Desktop devices (Desktops, 2550px and up)
+    /*========================================================================================================================*/

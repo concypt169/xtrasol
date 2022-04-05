@@ -1,0 +1,330 @@
+/******** Fonts ********/
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+    url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+    url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Italic.woff2') format('woff2'),
+    url('../fonts/Poppins-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+    url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+    url('../fonts/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+    }
+    /********** End-font *************/
+    a, a:hover, a:focus, a:active {
+        text-decoration: none !important;
+        color: inherit;
+        cursor: pointer !important;
+    }
+    /*************** Blog-Section ****************/
+    .blog-data {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .blog-header {
+        padding-top: 53px;
+        padding-bottom: 56px;
+    }
+    .blog-header h5:after {
+        content: "";
+        left: 0;
+        top: 6px;
+        position: absolute;
+        width: 33px;
+        height: 2px;
+        background: #000;
+    }
+    .blog-header h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 98.5%;
+    color: #000000;
+    padding-left: 45px;
+    position: relative;
+    }
+    .blog-header h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 98.5%;
+        color: #000000;
+        width: 70%;
+        padding-top: 44px;
+    }
+    .blog-header p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 136%;
+        color: #000000;
+        padding-top: 23px;
+    }
+    /************** Blog-Date *************/
+    .blog-inside {
+        padding-bottom: 61px;
+    }
+    .blog-inside img {
+        width: 100%;
+        height: auto;
+        max-width: 605px;
+    }
+    .blog-inside h4:after {
+        content: "";
+        left: 0;
+        top: 5px;
+        position: absolute;
+        width: 33px;
+        height: 2px;
+        background: #000;
+    }
+    .blog-inside h4 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 76%;
+        color: #000000;
+        margin-top: 44px;
+        position: relative;
+        padding-left: 45px;
+    }
+    .blog-inside a h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 43px;
+        color: #000000;
+        margin-top: 29px;
+    }
+    .blog-inside h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 76%;
+        color: #000000;
+        margin-top: 19px;
+    }
+
+
+
+
+
+
+
+    /*========================================================================================================================*/
+    /* Mobile devices (mobiles, 450px and up) */
+    @media screen and (min-width: 450px) {}
+    /* End Mobile devices (mobiles, 450px and up) */
+    /*========================================================================================================================*/
+    /* Mobile devices (mobiles, 576px and up) */
+    @media screen and (min-width: 576px) {}
+    /* End Mobile devices (mobiles, 576px and up) */
+    /*========================================================================================================================*/
+    /* Tab devices (Tabs, 768px and up) */
+    @media screen and (min-width: 768px) {}
+    /* End Tab devices (Tabs, 768px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 992px and up) */
+    @media screen and (min-width: 992px) {
+        /*********** Blog-Header *************/
+    .blog-header h5:after {
+        top: 11px;
+        width: 50px;
+    }
+    .blog-header {
+        padding-top: 96px;
+        padding-bottom: 118px;
+    }
+    .blog-header h5 {
+        font-size: 22px;
+        padding-left: 75px;
+    }
+    .blog-header h1 {
+        font-size: 90px;
+        padding-top: 73px;
+        width: 57%;
+    }
+    .blog-header p {
+        font-size: 34px;
+        padding-top: 73px;
+    }
+    /************* Blog-Data *************/
+    .blog-inside h4:after {
+        width: 50px;
+    }
+    .blog-inside {
+        padding-bottom: 118px;
+    }
+        .blog-data {
+            grid-template-columns: auto auto;
+            grid-gap: 69px;
+        }
+        .blog-inside h4 {
+            font-size: 24px;
+            margin-top: 73px;
+            padding-left: 75px;
+        }
+        .blog-inside a h2 {
+            font-size: 50px;
+            line-height: 57px;
+        }
+    }
+    /* End Desktop devices (Desktops, 992px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1400px and up) */
+    @media screen and (min-width: 1400px) {}
+    /* End Desktop devices (Desktops, 1400px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1600px and up) */
+    @media screen and (min-width: 1600px) {}
+    /* End Desktop devices (Desktops, 1600px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1900px and up) */
+    @media screen and (min-width: 1900px) {}
+    /* End Desktop devices (Desktops, 1900px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 2550px and up) */
+    @media screen and (min-width: 2550px) {}
+    /* End Desktop devices (Desktops, 2550px and up)
+    /*========================================================================================================================*/

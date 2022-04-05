@@ -1,0 +1,496 @@
+/******** Fonts ********/
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+    url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+    url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Italic.woff2') format('woff2'),
+    url('../fonts/Poppins-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+    url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+    url('../fonts/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+    }
+    /********** End-font *************/
+    a, a:hover, a:focus, a:active {
+        text-decoration: none !important;
+        color: inherit;
+        cursor: pointer !important;
+    }
+    .work-head-section h6:after {
+        content: "";
+        left: 0;
+        bottom: 11px;
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background: #000;
+    }
+    .work-head-section h6 {
+        position: relative;
+        padding-left: 80px;
+
+    }
+    .project-text h2:after {
+        content: "";
+        left: 0;
+        bottom: 17px;
+        position: absolute;
+        width: 33px;
+        height: 2px;
+        background: #000;
+    }
+    .project-text:hover h2:after{
+        background-color: #FF7608;
+    }
+    .project-rape h5:after {
+        content: "";
+        left: 0;
+        bottom: 9px;
+        position: absolute;
+        width: 33px;
+        height: 2px;
+        background: #000;
+    }
+    /* .active-project .project-rape h5:after{
+        background-color: #FF7608;
+    } */
+    .project-rape h5 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 98.5%;
+        color: #000000;
+        position: relative;
+        padding-left: 45px;
+        margin-bottom: 38px;
+    }
+    .project-text h2 {
+        position: relative;
+
+    }
+    .project-text a h6 {
+        background-image: url(../images/work-36.png);
+        background-repeat: no-repeat;
+        width: fit-content;
+        background-position: right;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 98.5%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        /* padding-left: 60px; */
+        margin-top: 30px;
+        padding-right: 75px;
+    }
+    .work-head-section {
+        padding-top: 58px;
+        padding-bottom: 70px;
+    }
+    .work-head-section h6 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 98.5%;
+        color: #000000;
+    }
+    .work-head-section h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 98.5%;
+        color: #000000;
+        width: 80%;
+        padding-top: 35px;
+        padding-bottom: 27px;
+    }
+    .work-head-section p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 136%;
+        color: #000000;
+        width: 87%;
+    }
+    /********** Project-Work-Section ************/
+    .project-work {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .project-inside {
+        padding-bottom: 58px;
+    }
+    .project-inside a img {
+        width: 100%;
+        max-width: 100%;
+        height: 344px;
+        object-fit: cover;
+    }
+    .project-text {
+        color: #000000;
+        padding-top: 49px;
+        width: 100%;
+        max-width: 100%;
+        height: 249px;
+        transition: 1s;
+    }
+    .project-text:hover a {
+        opacity: 1;
+    }
+    .project-text:hover {
+        color: #fff;
+        margin-top: -81px;
+        background: #000000;
+        padding-left: 20px;
+    }
+
+
+    .project-rape{
+        position: relative;
+        z-index: -1;
+    }
+    
+    /* .project-text:hover h3 {
+        padding-left: 43px;
+    } */
+
+    .project-text h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 117%;
+        padding-left: 43px;
+    }
+    .project-text h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 76%;
+        padding-top: 20px;
+        transition: 0.3s;
+    }
+    .project-text a {
+        opacity: 0;
+        display: block;
+    }
+    .project-min {
+        text-align: center;
+    }
+    .project-min a h6 {
+        background-image: url(../images/Group-res.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 98.5%;
+    letter-spacing: 0.265em;
+    text-transform: uppercase;
+    color: #000000;
+    }
+
+    /*========================================================================================================================*/
+    /* Mobile devices (mobiles, 450px and up) */
+    @media screen and (min-width: 450px) {}
+    /* End Mobile devices (mobiles, 450px and up) */
+    /*========================================================================================================================*/
+    /* Mobile devices (mobiles, 576px and up) */
+    @media screen and (min-width: 576px) {}
+    /* End Mobile devices (mobiles, 576px and up) */
+    /*========================================================================================================================*/
+    /* Tab devices (Tabs, 768px and up) */
+    @media screen and (min-width: 768px) {}
+    /* End Tab devices (Tabs, 768px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 992px and up) */
+    @media screen and (min-width: 992px) {
+        
+    .project-rape h5 {
+        padding-left: 76px;
+        margin-bottom: 38px;
+    }
+    .project-rape h5:after {
+        width: 50px;
+    }
+    .project-text h2:after {
+        bottom: 26px;
+        width: 50px;
+    }
+        .work-head-section {
+            padding-top: 96px;
+            padding-bottom: 82px;
+        }
+        .work-head-section h6 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 98.5%;
+            color: #000000;
+        }
+        .work-head-section h1 {
+            font-size: 90px;;
+        }
+        .work-head-section p {
+            font-size: 34px;
+        }
+        /********** Project-Work-Section ************/
+        .project-work {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .project-inside {
+            padding-bottom: 124px;
+        }
+        .project-inside a img {
+            width: 100%;
+            max-width: 95%;
+            height: 344px;
+            object-fit: cover;
+        }
+        .project-text {
+            padding-top: 57px;
+            height: 305px;
+            max-width: 95%;
+        }
+        .project-text:hover {
+            color: #fff;
+            margin-top: -81px;
+            background: #000000;
+            padding-left: 20px;
+        }
+
+
+        .project-rape{
+            position: relative;
+            z-index: -1;
+        }
+        
+        .project-text:hover h3 {
+            padding-left: 71px;
+        }
+        .project-text h2 {
+            font-size: 50px;
+            padding-left: 70px;
+        }
+        .project-text h3 {
+            font-size: 24px;
+            padding-top: 40px;
+        }
+        .project-text a {
+            opacity: 0;
+        }
+        .project-text a h6 {
+            font-size: 14px;
+            line-height: 98.5%;
+            letter-spacing: 0.265em;
+            color: #FFFFFF;
+            padding-left: 70px;
+            margin-top: 54px;
+            padding-right: 71px;
+        }
+        .project-min {
+            padding-bottom: 179px;
+        }
+        .project-min a h6 {
+            width: 429px;
+            font-size: 18px;
+        }
+    }
+    /* End Desktop devices (Desktops, 992px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1280px and up) */
+    @media screen and (min-width: 1280px) {
+        
+    }
+    /* End Desktop devices (Desktops, 1280px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1400px and up) */
+    @media screen and (min-width: 1400px) {
+        .project-inside a img {
+            max-width: 81%;
+        }
+        .project-text h2 {
+            font-size: 50px;
+            padding-left: 95px;
+        }
+        .project-text:hover h3 {
+            padding-left: 95px;
+        }
+        .project-text a h6 {
+            padding-left: 95px;
+        }
+        .project-text {
+            max-width: 81%;
+        }
+    }
+    /* End Desktop devices (Desktops, 1400px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1600px and up) */
+    @media screen and (min-width: 1600px) {}
+    /* End Desktop devices (Desktops, 1600px and up)
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 1900px and up) */
+    @media screen and (min-width: 1900px) {}
+    /* End Desktop devices (Desktops, 1900px and up)
+    /*========================================================================================================================*/
+    /*========================================================================================================================*/
+    /* Desktop devices (Desktops, 2550px and up) */
+    @media screen and (min-width: 2550px) {}
+    /* End Desktop devices (Desktops, 2550px and up)
+    /*========================================================================================================================*/
+
+
+
+
+
+
+
+
+
