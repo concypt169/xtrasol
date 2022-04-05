@@ -591,8 +591,7 @@ font-family: 'Poppins';
         padding-left: 46px;
         margin-top: 35px;
         background-position-y: 8px;
-        width: 272px;
-        margin-left: 105px;
+        width: fit-content;
         }
         .next-her {
         margin-top: 65px;
@@ -1463,14 +1462,10 @@ font-family: 'Poppins';
             opacity: 0;
         }
         .swiper-slide h3 {
-        background-image: url(../images/Rectangle-103.png);
-        font-size: 16px;
         background-repeat: no-repeat;
         padding-left: 46px;
         margin-top: 35px;
         background-position-y: 8px;
-        width: 270px;
-        margin-left: 152px;
         }
         .swiper-slide {
         text-align: center;
@@ -2192,7 +2187,6 @@ background-repeat: no-repeat;
 padding-left: 66px;
 margin-top: 63px;
 background-position-y: 8px;
-width: unset;
 }
 .next-her {
 margin-top: 171px;
