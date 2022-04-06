@@ -734,18 +734,28 @@ font-family: 'Poppins';
         }
         .specialization-work.tab1 {
         background-image: url(../images/taaf-1.jpg);
+        background-position: center;
+        background-size: cover;
         }
         .specialization-work.tab2 {
         background-image: url(../images/taaf-2.jpg);
+        background-position: center;
+        background-size: cover;
         }
         .specialization-work.tab3 {
         background-image: url(../images/taaf-3.jpg);
+        background-position: center;
+        background-size: cover;
         }
         .specialization-work.tab4 {
         background-image: url(../images/taaf-1.jpg);
+        background-position: center;
+        background-size: cover;
         }
         .specialization-work.tab5 {
         background-image: url(../images/taaf-2.jpg);
+        background-position: center;
+        background-size: cover;
         }
         /* .container-trap {
         } */
@@ -1966,16 +1976,6 @@ width: 100%;
 height: 827px;
 object-fit: cover;
 }
-button#wp-custom-header-video-button {
-width: 100px;
-height: 100px;
-border-radius: 50%;
-background-color: darkgray;
-color: #000;
-position: absolute;
-left: 50%;
-bottom: 10%;
-}
 .header-hero {
 position: relative;
 }
@@ -2812,16 +2812,6 @@ border-right: none;
     height: 827px;
     object-fit: cover;
     }
-    button#wp-custom-header-video-button {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: darkgray;
-    color: #000;
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    }
     .header-hero {
     position: relative;
     }
@@ -3398,16 +3388,6 @@ video#wp-custom-header-video {
 width: 100%;
 height: 827px;
 object-fit: cover;
-}
-button#wp-custom-header-video-button {
-width: 100px;
-height: 100px;
-border-radius: 50%;
-background-color: darkgray;
-color: #000;
-position: absolute;
-left: 50%;
-bottom: 10%;
 }
 .header-hero {
 position: relative;
