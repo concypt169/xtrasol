@@ -80,6 +80,7 @@ var swiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: 3000,
+  speed: 1500,
   autoplayDisableOnInteraction: false,
   runCallbacksOnInit: true,
   navigation: {
