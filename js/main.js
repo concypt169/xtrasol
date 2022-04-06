@@ -6,7 +6,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
         centeredSlides: true,
         loop: true,
-        speed: 1000,
+        speed: 1500,
         grabCursor: true,
         pagination: {
           el: ".swiper-pagination",
@@ -19,12 +19,12 @@ var swiper = new Swiper(".mySwiper", {
             grabCursor: true,
           },
           "@0.75": {
-            slidesPerView: 1,
+            slidesPerView: 2,
             grabCursor: true,
             spaceBetween: 20,
           },
           "@1.00": {
-            slidesPerView: 2,
+            slidesPerView: 3,
             grabCursor: true,
             spaceBetween: 40,
           },

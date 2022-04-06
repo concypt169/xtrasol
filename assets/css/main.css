@@ -480,7 +480,7 @@ font-family: 'Poppins';
             transform: scale(1);
             }
             .post-one:hover a img {
-                transform: scale(1.05);
+                transform: scale(1.01);
             }
             /* .post-one a img:hover {
             border: 2px solid #000;
@@ -560,7 +560,7 @@ font-family: 'Poppins';
             color: #FF7608;
             transform: rotate(-90deg);
             position: absolute;
-            top: 67%;
+            top: 66%;
             left: -10px;
             opacity: 0;
             transition: all .3s cubic-bezier(.165,.84,.44,1);
@@ -574,7 +574,7 @@ font-family: 'Poppins';
             color: #FF7608;
             transform: rotate(90deg);
             position: absolute;
-            top: 13%;
+            top: 15%;
             right: -16px;
             opacity: 0;
             transition: all .3s cubic-bezier(.165,.84,.44,1);
@@ -872,6 +872,14 @@ font-family: 'Poppins';
             color: #000000;
             text-decoration: underline;
             padding-left: 17px;
+        }
+        
+        div#numberSlides {
+            position: absolute;
+            z-index: 99;
+            top: 80%;
+            left: 5%;
+            text-decoration: underline;
         }
         /************* secand-swiper-slider ************/
         .swiper-container {
@@ -1227,7 +1235,19 @@ font-family: 'Poppins';
 }
 /* End Mobile devices (mobiles, 576px and up) */
 /*========================================================================================================================*/
-/* Tab devices (Tabs, 768px and up) */
+/* Tab devices (Tabs, 711px and up) */
+@media screen and (min-width: 711px) {
+    .swiper-slide h2 {
+        top: 15%;
+        right: -70px;
+    }
+    .swiper-slide h1 {
+        top: 65%;
+        left: -64px;
+    }
+}
+/*========================================================================================================================*/
+/* Tab devices (Tabs, 711px and up) */
 @media screen and (min-width: 768px) {
     .post-one a h2 {
         width: 87%;
@@ -1446,20 +1466,12 @@ font-family: 'Poppins';
         height: 100%;
         }
         .swiper-slide h1 {
-            font-size: 100px;
-            transform: rotate(-90deg);
-            position: absolute;
-            top: 48%;
-            left: -40px;
-            opacity: 0;
+            top: 68%;
+            left: -66px;
         }
         .swiper-slide h2 {
-            font-size: 100px;
-            transform: rotate(90deg);
-            position: absolute;
-            top: 26%;
-            right: -54px;
-            opacity: 0;
+            top: 14%;
+            right: -73px;
         }
         .swiper-slide h3 {
         background-repeat: no-repeat;
@@ -1673,6 +1685,9 @@ font-family: 'Poppins';
             text-decoration: underline;
             padding-left: 17px;
         }
+        div#numberSlides {
+            left: 33%;
+        }
         /************* secand-swiper-slider ************/
         .swiper-container {
         position: relative;
@@ -1848,6 +1863,19 @@ font-family: 'Poppins';
             justify-content: space-between;
             align-items: flex-end;
         }
+}
+/* End Tab devices (Tabs, 768px and up)
+/*========================================================================================================================*/
+/* Desktop devices (Desktops, 992px and up) */
+@media screen and (min-width: 946px) {
+.swiper-slide h1 {
+    top: 59%;
+    left: -109px;
+}
+.swiper-slide h2 {
+    top: 18%;
+    right: -115px;
+}
 }
 /* End Tab devices (Tabs, 768px and up)
 /*========================================================================================================================*/
@@ -2159,7 +2187,7 @@ height: 100%;
     transform: rotate(-90deg);
     position: absolute;
     top: 65%;
-    left: -66px;
+    left: -77px;
     opacity: 0;
 }
 .swiper-slide h2 {
@@ -2172,7 +2200,7 @@ height: 100%;
     transform: rotate(90deg);
     position: absolute;
     top: 14%;
-    right: -75px;
+    right: -85px;
     opacity: 0;
 }
 .swiper-slide h3 {
@@ -2443,6 +2471,9 @@ padding-right: 19px;
     color: #000000;
     text-decoration: underline;
     padding-left: 17px;
+}
+div#numberSlides {
+    left: 33%;
 }
 /************* secand-swiper-slider ************/
 .swiper-container {
@@ -3123,6 +3154,9 @@ border-right: none;
         text-decoration: underline;
         padding-left: 17px;
     }
+    div#numberSlides {
+        left: 30%;
+    }
     /************* secand-swiper-slider ************/
     .swiper-container {
     position: relative;
@@ -3657,6 +3691,9 @@ opacity: unset;
 }
 .unlin-txt h5 {
 font-size: 18px;
+}
+div#numberSlides {
+    left: 28%;
 }
 /************* secand-swiper-slider ************/
 .swiper-container {
