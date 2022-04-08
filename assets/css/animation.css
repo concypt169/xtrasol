@@ -1,0 +1,206 @@
+/*----------Global buttons----------*/
+.global-button {
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.global-button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.global-button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0cf;
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.global-button:hover {
+    color: #fff;
+}
+
+/*.global-button:hover:before {
+    width: 100%;
+}*/
+
+/*----------------*/
+.typing-text p {
+    display: inline;
+}
+
+.provide-for .typing-text {
+    height: 100px;
+}
+
+/*---- Cursor circle on hover --------*/
+.image-wrapper {
+    position: relative;
+    cursor: none;
+    touch-action: none;
+    margin-bottom: 2rem;
+}
+
+.image-wrapper .circle {
+    display: flex;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff0000;
+    border-radius: 80%;
+    backface-visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    mix-blend-mode: multiply;
+}
+
+.image-wrapper .circle img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.image-wrapper .content-overlay {
+  background: rgb(0 0 0 / 38%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.image-wrapper:hover .content-overlay{
+  opacity: 1;
+}
+
+.mySwiper .swiper-slide-active .step-confirmation-content{
+    position:relative;
+    /*height:300px;
+    width:500px;*/
+}
+.mySwiper .swiper-slide-active .step-confirmation-content > span{
+    height: 50px;
+    width: 50px;
+}
+.mySwiper .swiper-slide-active .step-confirmation-content > span.border-top{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 1;
+    right: unset;
+    width: calc(100%);
+    height: 6px;
+    background-image: linear-gradient(to right, red 50%, transparent 0%);
+    background-size: 8px 4px;
+    background-repeat: repeat-x;
+    background-position: 0% bottom;
+    animation-name: border-top-line;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes border-top-line {
+   from {
+     background-position: 0% bottom;
+   }
+   to {
+     background-position: 100% bottom;
+   }
+}
+.mySwiper .swiper-slide-active .step-confirmation-content > span.border-left {
+    position: absolute;
+    top: 11px;
+    right: 100%;
+    width: 4px;
+    height: calc(100% - 25px);
+    background-image: linear-gradient(to top, red 50%, transparent 0%);
+    background-size: 4px 8px;
+    background-repeat: repeat-y;
+    background-position: 0% top;
+    animation-name: border-left-line;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes border-left-line {
+   from {
+     background-position: 100% bottom;
+   }
+   to {
+     background-position: 0% top;
+   }
+}
+.mySwiper .swiper-slide-active .step-confirmation-content > span.border-bottom {
+    position: absolute;
+    bottom: 14px;
+    left: 100%;
+    width: 6px;
+    height: calc(100% - 26px);
+    background-image: linear-gradient(to top, red 50%, transparent 0%);
+    background-size: 4px 8px;
+    background-repeat: repeat-y;
+    background-position: 0% top;
+    animation-name: border-bottom-line;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 12px;
+}
+
+@keyframes border-bottom-line {
+   from {
+     background-position: 0% top;
+   }
+   to {
+     background-position: 100% bottom;
+   }
+}
+.mySwiper .swiper-slide-active .step-confirmation-content > span.border-right{
+    position: absolute;
+    top: calc(100% - 20px);
+    right: 0px;
+    height: 6px;
+    width: calc(100% - 0px);
+    background-image: linear-gradient(to left, red 50%, transparent 0%);
+    background-size: 8px 4px;
+    background-repeat: repeat-x;
+    background-position: 0% bottom;
+    animation-name: border-right-line;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes border-right-line {
+   from {
+     background-position: 100% bottom;
+   }
+   to {
+     background-position: 0% bottom;
+   }
+}

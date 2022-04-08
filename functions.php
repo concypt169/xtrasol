@@ -16,11 +16,14 @@ wp_enqueue_style('about-style', get_template_directory_uri() . "/assets/css/abou
 wp_enqueue_style('main-style', get_template_directory_uri() . "/assets/css/main.css" , array(), '1.0', 'all');
 wp_enqueue_style('fonts', get_template_directory_uri() . "/assets/fonts" , array(), '1.0', 'all');
 wp_enqueue_style('bootstrap', get_template_directory_uri() . "/assets/bootstrap/css/bootstrap.min.css" , array(), '1.0', 'all');
-wp_enqueue_script('jquery', get_template_directory_uri() . "/js/jquery.js" , array(), );
+wp_enqueue_style('animation-css', get_template_directory_uri() . "/assets/css/animation.css" , array(), '1.0', 'all');
+wp_enqueue_script('jquery', get_template_directory_uri() . "/assets/js/jquery.js" , array(), );
 wp_enqueue_style('icons',  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 wp_enqueue_style('swiper-css',  "https://unpkg.com/swiper@8/swiper-bundle.min.css");
 wp_enqueue_script('swiper-js',  "https://unpkg.com/swiper@8/swiper-bundle.min.js");
-wp_enqueue_script('custom-js', get_template_directory_uri() . "/js/main.js" , array(), );
+wp_enqueue_script('tweenmax-js', get_template_directory_uri() . "/assets/library/TweenMax.min.js" , array(), );
+wp_enqueue_script('custom-js', get_template_directory_uri() . "/assets/js/main.js" , array(), );
+wp_enqueue_script('animation-js', get_template_directory_uri() . "/assets/js/animation.js" , array(), );
 }
 add_action('wp_enqueue_scripts', 'extrasol_register_styles');
 // ---------- Add Our Widget Locations

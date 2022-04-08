@@ -9,7 +9,7 @@
          <img class="desk-992" src="<?php bloginfo('template_url'); ?>/assets/images/desk-992.png">
          <img class="mob-991" src="<?php bloginfo('template_url'); ?>/assets/images/mob-991.png">
          <p><?php the_field('head_description'); ?></p>
-         <a href="<?php the_field('head_btn'); ?>">View More</a>
+         <a class="global-button" href="<?php the_field('head_btn'); ?>">View More</a>
       </div>
    </div>
 </div>
@@ -30,7 +30,12 @@
          <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="provide-for">
                <h1><?php the_field('services_title'); ?></h1>
-               <p><?php the_field('services_description'); ?></p>
+               <div class="typing-text">
+               <p><span>extrasol in a digital agecny</span></p>
+                <p class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop.", "I Love to Develop12233." ]'>
+               <span class="wrap"></span></p>
+               </div>
+               <!-- <p><?php //the_field('services_description'); ?></p> -->
             </div>
          </div>
          <div class="col-lg-6 col-md-6 col-sm-12">
@@ -56,7 +61,9 @@
       'post_type'     => 'cars',
       'posts_per_page'     => 3
       )
-       ); ?>
+       ); 
+      $count = 1;
+       ?>
    <?php while( $posts->have_posts() ) : $posts->the_post(); ?>
    <?php
       $post_id = get_the_ID(); // or use the post id if you already have it
@@ -67,14 +74,22 @@
       <a href="<?php the_permalink(); ?>">
          <h2><?php the_title(); ?></h2>
       </a>
+      <div class="image-wrapper" data-circle="js-circle-<?php echo $count ?>">
       <a href="<?php the_permalink(); ?>">
       <?php if( get_field('feature_img') ): ?>
-    <img src="<?php the_field('feature_img'); ?>" />
-<?php endif; ?>
+          <img src="<?php the_field('feature_img'); ?>" />
+      <?php endif; ?>
       <?php the_excerpt(); ?></a>
+      <div class="circle js-circle-<?php echo $count ?>">
+         <img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png">
+      </div>
+      <div class="content-overlay"></div>
+      </div>
       <h3><?php echo get_the_term_list($post_id, 'brands'); ?></h3>
    </div>
-   <?php endwhile; wp_reset_postdata(); ?>
+   <?php 
+   $count++;
+   endwhile; wp_reset_postdata(); ?>
 </div>
       </div>
       </div>
@@ -109,10 +124,14 @@
                ?>
             <div class="swiper-slide">
                <h1><?php the_field('title');?></h1>
-               <a href="<?php the_permalink(); ?>">
+               <a href="<?php the_permalink(); ?>" class="step-confirmation-content">
                <?php if( get_field('work_img') ): ?>
                   <img src="<?php the_field('work_img'); ?>" />
                <?php endif; ?>
+               <span class="border-top"></span>
+              <span class="border-left"></span>
+              <span class="border-right"></span>
+              <span class="border-bottom"></span>
                </a>
                <h2><?php the_field('sub_title');?></h2>
                <h3><?php echo $cat->name; ?></h3>
@@ -261,7 +280,9 @@
             <?php while( $posts->have_posts() ) : $posts->the_post();
                ?>
             <div class="swiper-slide">
-               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+               <a href="<?php the_permalink(); ?>">
+                  <?php the_post_thumbnail(); ?>
+                  </a>
                <a href="<?php the_permalink(); ?>">
                   <h2><?php the_title(); ?></h2>
                </a>
