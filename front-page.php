@@ -17,9 +17,9 @@
 <div class="orange-set">
    <div class="container">
       <div class="sub-orange">
-         <p><?php the_field('orange_description'); ?></p>
-         <h1><?php the_field('oranges_title');?></h1>
-         <h2><?php the_field('oranges_number');?></h2>
+         <p data-aos="zoom-in" data-aos-duration="10"><?php the_field('orange_description'); ?></p>
+         <h1 data-aos="zoom-in" data-aos-duration="10" data-aos-delay="20"><?php the_field('oranges_title');?></h1>
+         <h2 data-aos="zoom-in" data-aos-duration="10" data-aos-delay="30"><?php the_field('oranges_number');?></h2>
       </div>
    </div>
 </div>
@@ -29,8 +29,8 @@
       <div class="row">
          <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="provide-for">
-               <h1><?php the_field('services_title'); ?></h1>
-               <div class="typing-text">
+               <h1 data-aos="zoom-in" data-aos-duration="10"><?php the_field('services_title'); ?></h1>
+               <div class="typing-text" data-aos="zoom-in" data-aos-duration="10" data-aos-delay="20">
                <p><span>extrasol in a digital agecny</span></p>
                 <p class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop.", "I Love to Develop12233." ]'>
                <span class="wrap"></span></p>
@@ -74,7 +74,7 @@
       <a href="<?php the_permalink(); ?>">
          <h2><?php the_title(); ?></h2>
       </a>
-      <div class="image-wrapper" data-circle="js-circle-<?php echo $count ?>">
+      <div class="image-wrapper image-wrapper1" data-circle="js-circle-<?php echo $count ?>">
       <a href="<?php the_permalink(); ?>">
       <?php if( get_field('feature_img') ): ?>
           <img src="<?php the_field('feature_img'); ?>" />
@@ -85,7 +85,19 @@
       </div>
       <div class="content-overlay"></div>
       </div>
-      <h3><?php echo get_the_term_list($post_id, 'brands'); ?></h3>
+      <h3>
+         <?php 
+            echo get_the_term_list($post_id, 'brands'); ?>
+            <svg width="100%" height="62">
+             <defs>
+                 <linearGradient id="grad1">
+                     <stop offset="0%" stop-color="#FF8282"/>
+                     <stop offset="100%" stop-color="#E178ED" />
+                 </linearGradient>
+             </defs>
+              <rect x="0" y="5" rx="25" fill="none" stroke="url(#grad1)" width="100%" height="50"></rect>
+           </svg>
+         </h3>
    </div>
    <?php 
    $count++;
@@ -98,8 +110,8 @@
    <div class="container-fluid">
       <div class="work-for">
          <div class="container">
-         <h1><?php the_field('work_title'); ?></h1>
-         <p><?php the_field('work_description'); ?></p>
+         <h1 data-aos="zoom-in" data-aos-duration="10"><?php the_field('work_title'); ?></h1>
+         <p data-aos="zoom-in" data-aos-delay="200" data-aos-duration="20"><?php the_field('work_description'); ?></p>
          </div>
       </div>
       <div class="swiper mySwiper">
@@ -150,8 +162,8 @@
 <!----- Specialization-Work ------>
 <div class="specialization-work">
    <div class="impression">
-      <h1><?php the_field('lization_title'); ?></h1>
-      <p><?php the_field('lization_description');?></p>
+      <h1 data-aos="zoom-in" data-aos-duration="10"><?php the_field('lization_title'); ?></h1>
+      <p data-aos="zoom-in" data-aos-duration="10" data-aos-delay="10"><?php the_field('lization_description');?></p>
    </div>
    <div class="container-trap">
       <div class="tabs">
@@ -217,13 +229,18 @@
          'posts_per_page'     => 3,
          ) ); ?>
       <div class="waves">
-         <h1><?php the_field('fluid_title');?></h1>
+         <h1 data-aos="zoom-in" data-aos-duration="10"><?php the_field('fluid_title');?></h1>
       </div>
       <div class="logo-repet">
-         <?php if( get_field('fluid_image') ): ?>
+         <?php if( get_field('fluid_image') ): 
+            $count = 2;
+            ?>
          <?php while( the_repeater_field('fluid_image') ): ?>
-         <img src="<?php the_sub_field('fliude_imag'); ?>" alt="<?php the_sub_field('alt'); ?>" />
-         <?php endwhile; ?>
+         <img data-aos="zoom-in-up" data-aos-easing="ease-in-back"
+     data-aos-delay="<?php echo $count?>00" data-aos-duration="<?php echo $count?>0" src="<?php the_sub_field('fliude_imag'); ?>" alt="<?php the_sub_field('alt'); ?>" />
+         <?php 
+         $count ++;
+         endwhile; ?>
          <?php endif;
             ?>
       </div>
@@ -264,7 +281,7 @@
 <div class="insights-section">
    <div class="insight-txt">
       <div class="container">
-      <h1><?php the_field('new&insight_title');?></h1>
+      <h1 data-aos="zoom-in" data-aos-duration="10"><?php the_field('new&insight_title');?></h1>
       </div>
    </div>
    <div class="insight-iner">
@@ -274,21 +291,30 @@
          $posts = new WP_Query( array(
          'post_type'     => 'new-insight',
          'posts_per_page'     => 4,
-         ) ); ?>
+         ) ); 
+         $count =1;
+         ?>
       <div class="swiper-container-insight">
          <div class="swiper-wrapper">
             <?php while( $posts->have_posts() ) : $posts->the_post();
                ?>
             <div class="swiper-slide">
-               <a href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail(); ?>
+               <div class="image-wrapper" data-circle="insight-circle-<?php echo $count ?>">
+                  <a href="<?php the_permalink(); ?>">
+                     <?php the_post_thumbnail(); ?>
                   </a>
+                  <div class="circle insight-circle-<?php echo $count ?>">
+                     <img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png">
+                  </div>
+               </div>
                <a href="<?php the_permalink(); ?>">
                   <h2><?php the_title(); ?></h2>
                </a>
                <?php the_content(); ?>
             </div>
-            <?php endwhile; wp_reset_postdata(); ?>
+            <?php 
+            $count ++;
+         endwhile; wp_reset_postdata(); ?>
          </div>
          <!-- Add Pagination -->
          <div id="prev" class="swiper-button-prev"></div>
@@ -307,7 +333,7 @@
 <div class="related-articlest-section">
    <div class="container">
    <div class="related-inside">
-      <h1><?php the_field('artical_title');?></h1>
+      <h1 data-aos="zoom-in" data-aos-duration="10"><?php the_field('artical_title');?></h1>
    </div>
    <div class="articale-inside">
       <?php
@@ -332,7 +358,12 @@
       <?php while( $posts->have_posts() ) : $posts->the_post(); ?>
       <div class="articalest-inside">
       <div class="articalest-inside-<?php echo $count ?>">
-         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+         <div class="image-wrapper" data-circle="inside-circle-<?php echo $count ?>">
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            <div class="circle inside-circle-<?php echo $count ?>">
+               <img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png">
+            </div>
+         </div>
          <h3><?php echo $cat->name; ?></h3>
          <a href="<?php the_permalink(); ?>">
             <h2><?php the_title(); ?></h2>

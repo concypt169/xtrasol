@@ -110,6 +110,9 @@ var swiper = new Swiper(".swiper-container-insight", {
  loop: true,
  speed: 1000,
  grabCursor: true,
+ mousewheel: {
+    releaseOnEdges: true,
+  },
  navigation: {
   nextEl: '.swiper-button-next',
   prevEl: '.swiper-button-prev',
@@ -150,14 +153,12 @@ jQuery('.our-work .swiper-slide-active').mouseleave(function(){
 
 // ------------------Work-page-hover-setup
   jQuery(".project-text").hover(function(){
-    console.log("test");
     jQuery(this).parent().toggleClass("active-project");
   });
 });
 
 // Navigation bar
 function openNav() {
-  console.log("test");
   jQuery('.closebtn').css('display', 'block');
  
     //document.getElementById("myNav").style.width = "100%";

@@ -71,14 +71,15 @@
     backface-visibility: hidden;
     pointer-events: none;
     opacity: 0;
-    mix-blend-mode: multiply;
+    z-index: 99;
+    /*mix-blend-mode: multiply;*/
 }
 
 .image-wrapper .circle img {
     width: 20px;
     height: 20px;
     margin: auto;
-}
+} 
 
 .image-wrapper .content-overlay {
   background: rgb(0 0 0 / 38%);
@@ -99,6 +100,8 @@
   opacity: 1;
 }
 
+
+/*------------ animated Border --------------*/
 .mySwiper .swiper-slide-active .step-confirmation-content{
     position:relative;
     /*height:300px;
@@ -109,14 +112,15 @@
     width: 50px;
 }
 .mySwiper .swiper-slide-active .step-confirmation-content > span.border-top{
+    border-top: unset !important;
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 0px;
     z-index: 1;
     right: unset;
     width: calc(100%);
     height: 6px;
-    background-image: linear-gradient(to right, red 50%, transparent 0%);
+    background-image: linear-gradient(to right, #FF7608 50%, transparent 0%);
     background-size: 8px 4px;
     background-repeat: repeat-x;
     background-position: 0% bottom;
@@ -136,10 +140,10 @@
 .mySwiper .swiper-slide-active .step-confirmation-content > span.border-left {
     position: absolute;
     top: 11px;
-    right: 100%;
+    right: 99%;
     width: 4px;
     height: calc(100% - 25px);
-    background-image: linear-gradient(to top, red 50%, transparent 0%);
+    background-image: linear-gradient(to top, #FF7608 50%, transparent 0%);
     background-size: 4px 8px;
     background-repeat: repeat-y;
     background-position: 0% top;
@@ -157,12 +161,13 @@
    }
 }
 .mySwiper .swiper-slide-active .step-confirmation-content > span.border-bottom {
+    border-bottom: unset !important;
     position: absolute;
     bottom: 14px;
-    left: 100%;
+    left: 99%;
     width: 6px;
     height: calc(100% - 26px);
-    background-image: linear-gradient(to top, red 50%, transparent 0%);
+    background-image: linear-gradient(to top, #FF7608 50%, transparent 0%);
     background-size: 4px 8px;
     background-repeat: repeat-y;
     background-position: 0% top;
@@ -183,11 +188,11 @@
 }
 .mySwiper .swiper-slide-active .step-confirmation-content > span.border-right{
     position: absolute;
-    top: calc(100% - 20px);
+    top: calc(100% - 9px);
     right: 0px;
     height: 6px;
     width: calc(100% - 0px);
-    background-image: linear-gradient(to left, red 50%, transparent 0%);
+    background-image: linear-gradient(to left, #FF7608 50%, transparent 0%);
     background-size: 8px 4px;
     background-repeat: repeat-x;
     background-position: 0% bottom;
@@ -204,3 +209,5 @@
      background-position: 0% bottom;
    }
 }
+
+/*----------Blog hover animation-----------*/

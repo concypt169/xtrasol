@@ -461,15 +461,42 @@ body {
         padding-left: 70px;
         }
         .post-one h3  {
-        text-align: end;
-        padding-left: 12px;
-        padding-top: 20px;
-        width: 93%;
-        margin-bottom: 59px;
+            position: relative;
+            text-align: end;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 59px;
+            max-width: fit-content;
+            margin-left: auto;
         }
+
+        .post-one h3 svg {
+            position: absolute;
+            top: -7px;
+            left: 0px;
+        }
+
+        .post-one h3 svg rect {
+            stroke-width: 0;
+            stroke-dasharray: 196, 543;
+            stroke-dashoffset: 437;
+            -webkit-transition: all 600ms ease;
+            transition: all 600ms ease;
+        }
+
+        .post-one h3:hover svg rect {
+            stroke-width: 4;
+            stroke-dasharray: 353, 0;
+            stroke-dashoffset: 0;
+        }
+
         .post-one {
             position: relative;
         }
+
+
+
         .post-one a p:hover {
             opacity: 1;
         }
@@ -497,14 +524,7 @@ body {
             max-width: 97%;
             transform: scale(1);
             }
-            .post-one:hover a img {
-                transform: scale(1.01);
-            }
-            /* .post-one a img:hover {
-            border: 2px solid #000;
-            border-style: dashed;
-            border-radius: 5px;
-            } */
+
         .post-one h3 a {
         font-family: 'Poppins';
         font-style: normal;
@@ -662,11 +682,12 @@ body {
         .swiper-slide-active {
         transition: all .3s cubic-bezier(.165,.84,.44,1);
         }
-        .our-work .swiper-slide-active a img:hover {
+
+        /*.our-work .swiper-slide-active a img:hover {
             border: 1px dashed #F2BCBA;
             box-sizing: border-box;
             border-radius: 5px;
-        }
+        }*/
         /********** Tabs-specialization ***********/
         .tabs {
         width: 100%;
@@ -1423,23 +1444,19 @@ body {
         padding-bottom: 200px;
         }
         .post-one h3  {
-        text-align: start;
-        padding-left: 12px;
-        padding-top: 20px;
-        width: 79%;
-        margin-bottom: unset;
+            margin-bottom: unset;
+            margin-right: 12px;
         }
+
         .post-one a p:hover {
             opacity: 1;
         }
+
         .post-one a p {
             width: 73%;
             font-size: 16px;
-            position: absolute;
             top: 37%;
             left: 8%;
-            opacity: 0;
-            transition: all .3s cubic-bezier(.165,.84,.44,1);
         }
         .post-one a img:hover + p {
             opacity: 1;
@@ -1538,11 +1555,12 @@ body {
         .swiper-slide-active {
         transition: all .3s cubic-bezier(.165,.84,.44,1);
         }
-        .our-work .swiper-slide-active a img:hover {
+
+        /*.our-work .swiper-slide-active a img:hover {
             border: 1px dashed #F2BCBA;
             box-sizing: border-box;
             border-radius: 5px;
-        }
+        }*/
         /********** Tabs-specialization ***********/
         .tabs {
         width: 100%;
@@ -2103,35 +2121,24 @@ background-position-y: 45px;
 width: 85%;
 padding-left: 71px;
 }
-.post-one h3  {
-    text-align: end;
-    padding-left: unset;
-    padding-right: 12px;
-    padding-top: 34px;
-    width: 85%;
-}
+
+    .post-one h3  {
+        padding-left: unset;
+        margin-top: 34px;
+    }
+
 .post-one a p:hover {
     opacity: 1;
 }
 .post-one a p {
-    width: 73%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 172.5%;
-    color: #FFFFFF;
-    position: absolute;
     top: 50%;
     left: 8%;
-    opacity: 0;
-    transition: all .3s cubic-bezier(.165,.84,.44,1);
 }
+
 .post-one a img:hover + p {
     opacity: 1;
 }
 .post-one a img {
-    transition: all .3s cubic-bezier(.165,.84,.44,1);
     width: 100%;
     height: auto;
     max-width: 85%;
@@ -2274,11 +2281,12 @@ object-fit: cover;
 .swiper-slide-active {
 transition: all .3s cubic-bezier(.165,.84,.44,1);
 }
-.our-work .swiper-slide-active a img:hover {
+
+/*.our-work .swiper-slide-active a img:hover {
     border: 1px dashed #F2BCBA;
     box-sizing: border-box;
     border-radius: 5px;
-}
+}*/
 /********** Tabs-specialization ***********/
 .tabs {
 width: 100%;
@@ -2888,23 +2896,20 @@ border-right: none;
     padding-top: 79px;
     padding-bottom: 200px;
     }
+
     .post-one h3  {
-        text-align: end;
-        padding-right: 41px;
-        padding-top: 34px;
-        width: 97%;
+        margin-right: 41px;
+        padding: 0 10px;
     }
+
     .post-one a p:hover {
         opacity: 1;
     }
     .post-one a p {
         width: 66%;
         font-size: 27px;
-        position: absolute;
-        top: 42%;
+        top: 30%;
         left: 12%;
-        opacity: 0;
-        transition: all .3s cubic-bezier(.165,.84,.44,1);
     }
     .post-one .image-wrapper:hover p {
         opacity: 1;
@@ -3013,11 +3018,11 @@ border-right: none;
     .swiper-slide-active {
     transition: all .3s cubic-bezier(.165,.84,.44,1);
     }
-    .our-work .swiper-slide-active a img:hover {
+    /*.our-work .swiper-slide-active a img:hover {
         border: 1px dashed #F2BCBA;
         box-sizing: border-box;
         border-radius: 5px;
-    }
+    }*/
     /********** Tabs-specialization ***********/
     .tabs {
     width: 100%;
@@ -3469,9 +3474,9 @@ padding-bottom: 200px;
     text-align: end;
 } */
 .post-one h3 a {
-font-size: 22px;
-opacity: 0.5;
-/* padding-top: 34px; */
+    font-size: 22px;
+    opacity: 0.5;
+    /* padding-top: 34px; */
 }
 .post-one a img {
 transition: all .3s cubic-bezier(.165,.84,.44,1);
@@ -3572,15 +3577,17 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 }
+
 .swiper-slide-active {
 transition: all .3s cubic-bezier(.165,.84,.44,1);
 }
-.our-work .swiper-slide-active a img:hover {
+
+/*.our-work .swiper-slide-active a img:hover {
 border: 1px dashed #F2BCBA;
 box-sizing: border-box;
 border-radius: 5px;
 padding: 10px;
-}
+}*/
 /********** Tabs-specialization ***********/
 .tabs {
 width: 100%;

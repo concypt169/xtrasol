@@ -274,6 +274,11 @@
         background: #000000;
         color: #fff;
     }
+
+    .repeter-data:hover h5 {
+        color: #000;
+    }
+    
     .repeter-data h5 {
         font-family: 'Poppins';
         font-style: normal;
