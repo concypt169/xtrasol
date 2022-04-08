@@ -26,6 +26,8 @@ wp_enqueue_style('aos-animation-css', get_template_directory_uri() . "/assets/li
 wp_enqueue_script('aos-animation-js', get_template_directory_uri() . "/assets/library/aos.js" , array(), );
 wp_enqueue_script('custom-js', get_template_directory_uri() . "/assets/js/main.js" , array(), );
 wp_enqueue_script('animation-js', get_template_directory_uri() . "/assets/js/animation.js" , array(), );
+wp_enqueue_style('globalbtn', get_template_directory_uri() . "/assets/css/globalbtn.css" , array(), '1.0', 'all');
+wp_enqueue_script('globalbtn', get_template_directory_uri() . "/assets/js/globalbtn.js" , array(), );
 }
 add_action('wp_enqueue_scripts', 'extrasol_register_styles');
 // ---------- Add Our Widget Locations
