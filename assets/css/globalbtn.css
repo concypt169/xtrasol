@@ -1,0 +1,200 @@
+/*=================================HOMEPAGE==================================*/
+
+.contact-bts a {
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.contact-bts a,
+.creative-set a {
+	display: inline-block;
+	transition: all 0.3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.contact-bts a:after,
+.creative-set a:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FF7608;
+	border-radius: 100px;
+	z-index: -2;
+}
+
+.contact-bts a:before,
+.creative-set a:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: #e02d32;
+	transition: all 0.3s;
+	border-radius: 100px;
+	z-index: -1;
+}
+
+.creative-set a:before {
+	background-color: #fff;
+}
+
+.contact-bts a:hover {
+	color: #fff;
+}
+
+.creative-set a:hover {
+	color: #000;
+}
+
+.contact-bts a:hover:before,
+.creative-set a:hover:before {
+	width: 100%;
+}
+
+.double-head a h6 {
+	-webkit-transition: color 0.4s ease; /* For Safari 3.0 to 6.0 */
+     transition: color 0.4s ease; /* For modern browsers */
+}
+
+.double-head a:hover h6 {
+	color: #FF7608;
+}
+
+.articale-inside img,
+.testimon .uniling img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.next-her a h6 {
+	margin-right: 0;
+	padding-right: 0;
+	margin-left: 15px;
+	max-width: 280px;
+	display: block;
+	width: 100%;
+	float: left;
+	background-position-x: 205px;
+	transition: all .5s cubic-bezier(.165,.84,.44,1);
+}
+
+.next-her a:hover h6 {
+	background-position-x: 220px;
+}
+
+.go-next a h6,
+.build-txt a h6 {
+	transition: all .5s cubic-bezier(.165,.84,.44,1);
+	margin-right: 0;
+	padding-right: 0;
+	width: 100%;
+	max-width: 280px;
+	background-position-x: 210px;
+}
+
+.build-txt a h6 {
+	letter-spacing: 0.1em;
+}
+
+.go-next a,
+.build-txt a {
+    max-width: 280px;
+    display: block;
+}
+
+.go-next a h6:hover,
+.build-txt a h6:hover {
+	background-position-x: 230px;
+}
+
+.articalest-inside a h2 {
+	transition: text-decoration-color 300ms;
+}
+
+.articalest-inside:hover a h2 {
+	text-decoration-color: #FF7608;
+}
+
+.build-txt h1 {
+	max-width: 343px;
+	width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+	.next-her a h6 {
+		max-width: 250px;
+		width: 100%;
+		background-position-x: 220px;
+		float: right;
+	}
+
+	.next-her a:hover h6 {
+		background-position-x: 240px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.go-next a,
+	.build-txt a {
+	    max-width: 350px;
+	    display: block;
+	}
+
+	.go-next a h6,
+	.build-txt a h6 {
+		background-position-x: 260px;
+		max-width: 350px;
+	}
+
+	.go-next a h6:hover,
+	.build-txt a h6:hover {
+		background-position-x: 290px;
+	}
+
+	.build-txt a h6 {
+		letter-spacing: 0.265em;
+	}
+
+	.build-txt h1 {
+    	max-width: 500px;
+    }
+} 
+
+@media screen and (min-width: 992px) {
+	.next-her a h6 {
+		max-width: 350px;
+		margin-right: 150px;
+		background-position-x: 250px;
+	}
+
+	.next-her a:hover h6 {
+		background-position-x: 280px;
+	}
+
+	.go-next a,
+	.build-txt a {
+	    max-width: 380px;
+	}
+
+	.go-next a h6,
+	.build-txt a h6 {
+		background-position-x: 290px;
+		max-width: 380px;
+	}
+
+	.go-next a h6:hover,
+	.build-txt a h6:hover {
+		background-position-x: 320px;
+	}
+
+	.build-txt h1 {
+		max-width: 850px;
+	}
+}

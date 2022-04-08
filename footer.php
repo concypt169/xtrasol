@@ -14,7 +14,7 @@
         <div class="col-lg-4">
         <div class="couk">
         <li><a href="/HOME">http://extrasol.co.uk</a></li>
-        <h3>tel:+44 203603 7090</h3>
+        <a href="tel:442036037090"><h3>tel:+44 203603 7090</h3></a>
         </div>
         </div>
         <div class="col-lg-4">

@@ -312,7 +312,6 @@
             transition: all .5s cubic-bezier(.165,.84,.44,1);
         }
         .our-wrap-txt:hover {
-            background-color: transparent;
             background-image: url(../images/bg-12.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -328,7 +327,6 @@
             transition: all .5s cubic-bezier(.165,.84,.44,1);
         }
         .box-link:hover {
-            background-color: transparent;
             background-image: url(../images/bg-12.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -553,7 +551,6 @@
             height: 509px;
         }
         .our-wrap-txt:hover {
-            background-color: transparent;
             background-image: url(../images/bg-12.png);
         }
         .box-link {
