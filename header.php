@@ -10,7 +10,7 @@
         <!----Nav-Bar---->
         <div class="hd-nav">
             <div class="extra-log">
-            <a href="<?php the_field(''); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/new-logo.png"></a>
+            <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/new-logo.png"></a>
             </div>
             <nav class="sit-nav">
                 <?php
