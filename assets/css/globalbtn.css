@@ -90,7 +90,9 @@
 }
 
 .go-next a h6,
-.build-txt a h6 {
+.build-txt a h6,
+.project-text a h6,
+.what-rape a h6 {
 	transition: all .5s cubic-bezier(.165,.84,.44,1);
 	margin-right: 0;
 	padding-right: 0;
@@ -99,19 +101,44 @@
 	background-position-x: 210px;
 }
 
+.what-rape a h6 {
+	background-position-x: 160px;
+	max-width: 250px;
+	background-position-y: -1px;
+}
+
+.project-text a h6 {
+	background-position-x: 165px;
+}
+
 .build-txt a h6 {
 	letter-spacing: 0.1em;
 }
 
 .go-next a,
-.build-txt a {
+.build-txt a,
+.project-text a,
+.what-rape a {
     max-width: 280px;
     display: block;
+}
+
+
+.what-rape a {
+    max-width: 320px;
 }
 
 .go-next a h6:hover,
 .build-txt a h6:hover {
 	background-position-x: 230px;
+}
+
+.what-rape a h6:hover {
+	background-position-x: 190px;
+}
+
+.project-text a h6:hover {
+	background-position-x: 190px;
 }
 
 .articalest-inside a h2 {
@@ -127,6 +154,11 @@
 	width: 100%;
 }
 
+.senior-slide a h2 {
+	background-position-y: 5px;
+	line-height: 20px;
+}
+
 @media screen and (min-width: 576px) {
 	.next-her a h6 {
 		max-width: 250px;
@@ -138,6 +170,11 @@
 	.next-her a:hover h6 {
 		background-position-x: 240px;
 	}
+
+	.senior-slide a h2:hover {
+		padding-right: 80px;
+		transition: all .5s cubic-bezier(.165,.84,.44,1);
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -147,10 +184,18 @@
 	    display: block;
 	}
 
+	.project-text a {
+	    max-width: 250px;
+	}
+
 	.go-next a h6,
 	.build-txt a h6 {
 		background-position-x: 260px;
 		max-width: 350px;
+	}
+
+	.project-text a h6 {
+		max-width: 250px;
 	}
 
 	.go-next a h6:hover,
@@ -179,8 +224,13 @@
 	}
 
 	.go-next a,
-	.build-txt a {
+	.build-txt a,
+	.what-rape a {
 	    max-width: 380px;
+	}
+
+	.what-rape a {
+	    max-width: 300px;
 	}
 
 	.go-next a h6,
@@ -189,12 +239,58 @@
 		max-width: 380px;
 	}
 
+	.what-rape a h6 {
+		background-position-x: 190px;
+		background-position-y: 0px;
+		max-width: 300px;
+	}
+
+	.project-text a {
+	    max-width: 400px;
+	}
+
+	.project-text a h6 {
+		background-position-x: 290px;
+		max-width: 400px;
+	}
+
 	.go-next a h6:hover,
 	.build-txt a h6:hover {
 		background-position-x: 320px;
 	}
 
+	.what-rape a h6:hover {
+		background-position-x: 220px;
+	}
+
+	.project-text a h6:hover {
+		background-position-x: 320px;
+	}
+
 	.build-txt h1 {
 		max-width: 850px;
+	}
+
+	.senior-slide a h2 {
+		padding-right: 70px;
+	}
+
+	.senior-slide a h2:hover {
+		padding-right: 90px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.project-text a {
+	    max-width: 450px;
+	}
+
+	.project-text a h6 {
+		background-position-x: 340px;
+		max-width: 450px;
+	}
+
+	.project-text a h6:hover {
+		background-position-x: 380px;
 	}
 }

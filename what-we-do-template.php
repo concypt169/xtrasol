@@ -51,11 +51,10 @@ get_header();
                 </a>
                 </div>
                 <div class="what-rape">
-                    <a href="<?php the_permalink(); ?>">
-                        <h2 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"><?php the_title(); ?></h2></a>
+                    <h2 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"><?php the_title(); ?></h2>
                     <?php the_content(); ?>
                     <a href="<?php the_permalink(); ?>">
-                        <h6>EXPLORE ALL Projects</h6>
+                        <h6>EXPLORE MORE</h6>
                     </a>
                 </div>
             </div>
