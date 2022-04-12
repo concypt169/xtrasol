@@ -195,7 +195,8 @@
         line-height: 136%;
         color: #000000;
         margin-top: 26px;
-        width: 338px;
+        max-width: 338px;
+        width: 100%;
     }
     /************** What-Inside ****************/
     .what-inside {
@@ -206,7 +207,6 @@
         width: 100%;
         height: auto;
         max-width: 590px;
-        min-width: 590px;
     }
     .what-rape h2 {
         font-family: 'Poppins';
@@ -328,7 +328,7 @@
             width: 396px;
         }
         .what-header-section p {
-            width: 444px;
+            max-width: 444px;
         }
     }
     /* End Tab devices (Tabs, 768px and up)
@@ -366,7 +366,7 @@
         font-size: 34px;
         line-height: 136%;
         margin-top: 73px;
-        width: unset;
+        max-width: unset;
     }
     /************** What-Inside ****************/
     .what-inside {
@@ -452,9 +452,9 @@
         .repeter-data {
             padding-left: unset;
         }
-    .repeter-data p {
-        width: 295px;
-    }
+        .repeter-data p {
+            width: 295px;
+        }
     }
     /* End Desktop devices (Desktops, 1280px and up)
     /*========================================================================================================================*/
@@ -469,7 +469,11 @@
     /*========================================================================================================================*/
     /*========================================================================================================================*/
     /* Desktop devices (Desktops, 1600px and up) */
-    @media screen and (min-width: 1600px) {}
+    @media screen and (min-width: 1600px) {
+        .what-img a img {
+            min-width: 590px;
+        }
+    }
     /* End Desktop devices (Desktops, 1600px and up)
     /*========================================================================================================================*/
     /* Desktop devices (Desktops, 1900px and up) */

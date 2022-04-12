@@ -163,7 +163,7 @@
         padding-left: 80px;
 
     }
-    .project-text h2:after {
+    .project-work .project-text h2:after {
         content: "";
         left: 0;
         bottom: 17px;
@@ -198,7 +198,7 @@
         padding-left: 45px;
         margin-bottom: 38px;
     }
-    .project-text h2 {
+    .project-work .project-text h2 {
         position: relative;
 
     }
@@ -289,11 +289,11 @@
         z-index: -1;
     }
     
-    /* .project-text:hover h3 {
+    /* .project-work .project-text:hover h3 {
         padding-left: 43px;
     } */
 
-    .project-text h2 {
+    .project-work .project-text h2 {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
@@ -357,10 +357,10 @@
     .project-rape h5:after {
         width: 50px;
     }
-    .project-text h2:after {
+    .project-work .project-text h2:after {
         bottom: 26px;
         width: 50px;
-    }
+    }   
         .work-head-section {
             padding-top: 96px;
             padding-bottom: 82px;
@@ -411,10 +411,10 @@
             z-index: -1;
         }
         
-        .project-text:hover h3 {
+        .project-work .project-text:hover h3 {
             padding-left: 71px;
         }
-        .project-text h2 {
+        .project-work .project-text h2 {
             font-size: 50px;
             padding-left: 70px;
         }
@@ -456,11 +456,11 @@
         .project-inside a img {
             max-width: 81%;
         }
-        .project-text h2 {
+        .project-work .project-text h2 {
             font-size: 50px;
             padding-left: 95px;
         }
-        .project-text:hover h3 {
+        .project-work .project-text:hover h3 {
             padding-left: 95px;
         }
         .project-text a h6 {
