@@ -115,10 +115,10 @@
     border-top: unset !important;
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 23px;
     z-index: 1;
     right: unset;
-    width: calc(100%);
+    width: calc(88%);
     height: 6px;
     background-image: linear-gradient(to right, #FF7608 50%, transparent 0%);
     background-size: 8px 4px;
@@ -140,7 +140,7 @@
 .mySwiper .swiper-slide-active .step-confirmation-content > span.border-left {
     position: absolute;
     top: 11px;
-    right: 99%;
+    right: 94%;
     width: 4px;
     height: calc(100% - 25px);
     background-image: linear-gradient(to top, #FF7608 50%, transparent 0%);
@@ -164,7 +164,7 @@
     border-bottom: unset !important;
     position: absolute;
     bottom: 14px;
-    left: 99%;
+    left: 93%;
     width: 6px;
     height: calc(100% - 26px);
     background-image: linear-gradient(to top, #FF7608 50%, transparent 0%);
@@ -189,9 +189,9 @@
 .mySwiper .swiper-slide-active .step-confirmation-content > span.border-right{
     position: absolute;
     top: calc(100% - 9px);
-    right: 0px;
+    right: 24px;
     height: 6px;
-    width: calc(100% - 0px);
+    width: calc(88% - 0px);
     background-image: linear-gradient(to left, #FF7608 50%, transparent 0%);
     background-size: 8px 4px;
     background-repeat: repeat-x;
@@ -210,4 +210,23 @@
    }
 }
 
-/*----------Blog hover animation-----------*/
+/*---------------------*/
+@media screen and (min-width: 576px) {
+    .mySwiper .swiper-slide-active .step-confirmation-content > span.border-top {
+        left: 0px;
+        width: calc(100%);
+    }
+
+    .mySwiper .swiper-slide-active .step-confirmation-content > span.border-left {
+        right: 99%;
+    }
+
+    .mySwiper .swiper-slide-active .step-confirmation-content > span.border-right {
+        right: 0px;
+        width: calc(100% - 0px);
+    }
+
+    .mySwiper .swiper-slide-active .step-confirmation-content > span.border-bottom {
+        left: 99%;
+    }
+}

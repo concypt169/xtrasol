@@ -1,6 +1,18 @@
 jQuery(document).ready(function(){
   AOS.init();
 
+  jQuery(function(){
+    jQuery(document).on("click","a",function(e){
+      e.preventDefault();
+      var el = jQuery(this).attr('href');
+      el = el.match(/(^|\W)tel:($|\W)/);
+      if(el){
+        jQuery('.ept_swipe').addClass('ept_swipe--animate');
+      } else {
+        console.log('no');
+      }
+    });
+ });
   ///----- Text typing--------------///
   var TxtType = function(el, toRotate, period) {
       this.toRotate = toRotate;

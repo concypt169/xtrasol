@@ -7,14 +7,16 @@
     <div class="row">
         <div class="col-lg-4">
         <div class="right">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/Mask-Group.png">
+        <a href="<?php echo get_home_url(); ?>">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/footer-logo.png">
+        </a>
         <h1>© 2020 All Right Reserved </h1>
         </div>
-        </div>
+        </div> 
         <div class="col-lg-4">
         <div class="couk">
-        <li><a href="/HOME">http://extrasol.co.uk</a></li>
-        <a href="tel:442036037090"><h3>tel:+44 203603 7090</h3></a>
+        <li><a href="<?php echo get_home_url(); ?>">http://extrasol.co.uk</a></li>
+        <li><a href="tel:+442036037090">Tel:+44 203603 7090</a></li>
         </div>
         </div>
         <div class="col-lg-4">
