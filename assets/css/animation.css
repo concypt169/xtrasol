@@ -115,7 +115,7 @@
     border-top: unset !important;
     position: absolute;
     top: 0;
-    left: 23px;
+    left: 16px;
     z-index: 1;
     right: unset;
     width: calc(88%);
@@ -189,7 +189,7 @@
 .mySwiper .swiper-slide-active .step-confirmation-content > span.border-right{
     position: absolute;
     top: calc(100% - 9px);
-    right: 24px;
+    right: 16px;
     height: 6px;
     width: calc(88% - 0px);
     background-image: linear-gradient(to left, #FF7608 50%, transparent 0%);

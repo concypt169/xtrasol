@@ -4,12 +4,10 @@ jQuery(document).ready(function(){
   jQuery(function(){
     jQuery(document).on("click","a",function(e){
       e.preventDefault();
-      var el = jQuery(this).attr('href');
-      el = el.match(/(^|\W)tel:($|\W)/);
-      if(el){
+      var checklink = jQuery(this).attr('href');
+      
+      if (checklink.indexOf("mailto:") >= 0 || checklink.indexOf("tel:") >= 0){
         jQuery('.ept_swipe').addClass('ept_swipe--animate');
-      } else {
-        console.log('no');
       }
     });
  });

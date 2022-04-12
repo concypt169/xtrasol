@@ -12,7 +12,7 @@
          <a class="global-button" href="<?php the_field('head_btn'); ?>">View More</a>
       </div>
    </div>
-</div>
+</div> 
 <!---- Orange-Set ---->
 <div class="orange-set">
    <div class="container">
@@ -388,7 +388,7 @@
          <a href="<?php the_permalink(); ?>">
             <h2><?php the_title(); ?></h2>
          </a>
-      </div>
+      </div> 
       </div>
       <?php
          $count++;

@@ -214,9 +214,15 @@
         line-height: 27px;
         color: #000000;
     }
+
+    .call-us h2:hover {
+        color: #0d6efd;
+    }
+
     .say-hello h5 {
         margin-top: 51px;
     }
+
     .say-hello h5 {
         font-family: 'Poppins';
         font-style: normal;
@@ -235,9 +241,13 @@
         text-decoration-line: underline;
         color: #000000;
     }
+
     .media {
+        display: flex;
+        align-items: center;
         margin-top: 35px;
     }
+
     .media a {
         padding-right: 25px;
     }
@@ -273,6 +283,7 @@
         height: 48px;
         max-width: 695px;
         border-color: transparent;
+        outline: unset;
     }
     input.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-tel {
         background: #E6E6E6;
@@ -282,6 +293,7 @@
         height: 48px;
         max-width: 695px;
         border-color: transparent;
+        outline: unset;
     }
     textarea.wpcf7-form-control.wpcf7-textarea {
         background: #E6E6E6;
@@ -292,6 +304,7 @@
         max-width: 1280px;
         border-color: transparent;
         margin-top: 33px;
+        outline: unset;
     }
     input.wpcf7-form-control.has-spinner.wpcf7-submit {
         font-family: 'Poppins';
@@ -307,6 +320,77 @@
         margin-top: 37px;
         float: right;
     }
+
+    .social-links {
+        display: block;
+        width: 37px;
+        height: 37px;
+        margin-left: 12px;
+        margin-right: 13px;
+    }
+
+    .social-links.twitter {
+        margin-left: 0;
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/twitter.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .social-links.twitter:hover {
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/twitter-hover.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .social-links.facebook {
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/facebook.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .social-links.facebook:hover {
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/facebook-hover.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .social-links.instagram {
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/instagram.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .social-links.instagram:hover {
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/instagram-hover.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .social-links.behance {
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/behance.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .social-links.behance:hover {
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/behance-hover.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .social-links.linkedin {
+        margin-right: 0;
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/linkedin.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .social-links.linkedin:hover {
+        background: url("/newxtrasol/wp-content/themes/Extrasol/assets/images/linkedin-hover.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
     /*========================================================================================================================*/
     /* Mobile devices (mobiles, 450px and up) */
     @media screen and (min-width: 450px) {}

@@ -202,7 +202,7 @@
     .together-inside2 img {
         width: 100%;
         height: auto;
-        max-width: 114px;
+        max-width: 102px;
     }
     .together-inside1 {
         padding-bottom: 20px;
@@ -210,10 +210,11 @@
     .together-inside3 img {
         width: 100%;
         height: auto;
-        max-width: 196px;
+        max-width: 176px;
     }
+
     .together-inside2 {
-        padding-right: 37px;
+        padding-right: 16px;
     }
     /************* collaborative-section **************/
     .collaborative-section {
@@ -302,7 +303,19 @@
     /* End Mobile devices (mobiles, 450px and up) */
     /*========================================================================================================================*/
     /* Mobile devices (mobiles, 576px and up) */
-    @media screen and (min-width: 576px) {}
+    @media screen and (min-width: 576px) {
+        .together-inside2 {
+            padding-right: 37px;
+        }
+
+        .together-inside3 img {
+            max-width: 246px;
+        }
+
+        .together-inside2 img {
+            max-width: 140px;
+        }
+    }
     /* End Mobile devices (mobiles, 576px and up) */
     /*========================================================================================================================*/
     /* Tab devices (Tabs, 768px and up) */

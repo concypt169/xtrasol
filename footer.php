@@ -40,31 +40,31 @@
             <div class="follow">
                 <h6>Follow us:</h6>
                 <div class="twit">
-                <a href="#">
+                <a href="http://www.twitter.com" target="_blank">
                 <img src="<?php bloginfo('template_url'); ?>/assets/images/lucide_twitter.png">
                 <h6>Twitter</h6>
                 </a>
                 </div>
                 <div class="twit">
-                <a href="#">
+                <a href="http://www.facebook.com" target="_blank">
                 <img src="<?php bloginfo('template_url'); ?>/assets/images/tabler_brand-facebook.png">
                 <h6>Facebook</h6>
                 </a>
                 </div>
                 <div class="twit">
-                <a href="#">
+                <a href="http://www.instagram.com" target="_blank">
                 <img src="<?php bloginfo('template_url'); ?>/assets/images/bi_instagram.png">
                 <h6>Instagram</h6>
                 </a>
                 </div>
                 <div class="twit">
-                <a href="#">
+                <a href="http://www.behance.com" target="_blank">
                 <img src="<?php bloginfo('template_url'); ?>/assets/images/akar-icons_dribbble-fill.png">
                 <h6>DRIBBBLE</h6>
                 </a>
                 </div>
                 <div class="twit">
-                <a href="#">
+                <a href="http://www.linkedin.com" target="_blank">
                 <img src="<?php bloginfo('template_url'); ?>/assets/images/simple-line-icons_social-linkedin.png">
                 <h6>LinkedIn</h6>
                 </a>

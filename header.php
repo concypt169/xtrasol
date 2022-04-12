@@ -36,7 +36,8 @@
             <div class="extra-log-bar">
             <a href="<?php the_field(''); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/Mask-Group.png"></a>
             </div>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
                 <?php
                 $args = array(
                     'theme_location' => 'primary'

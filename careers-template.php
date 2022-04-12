@@ -16,8 +16,8 @@ get_header();
     <div class="container">
         <div class="careers-header-section">
             <h5><?php the_field('header_little_title');?></h5>
-            <h1><?php the_field('header_title');?></h1>
-            <p><?php the_field('header_description'); ?></p>
+            <h1 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000"><?php the_field('header_title');?></h1>
+            <p data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000" data-aos-delay="20"><?php the_field('header_description'); ?></p>
         </div>
     </div>
     <div class="collaborative-section">
@@ -46,7 +46,13 @@ get_header();
             ?>
             <?php while( the_repeater_field('collaborative_img') ): ?>
             <div class="together-inside<?php echo $count?>">
-                <img src="<?php the_sub_field('collaborat_img'); ?>" alt="<?php the_sub_field('alt'); ?>" />
+                
+                <div class="image-wrapper" data-circle="inside-circle-<?php echo $count ?>">
+                    <img src="<?php the_sub_field('collaborat_img'); ?>" alt="<?php the_sub_field('alt'); ?>" />
+                    <div class="circle inside-circle-<?php echo $count ?>">
+                       <img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png">
+                    </div>
+                 </div>
             </div>
             <?php
             $count++;

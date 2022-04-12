@@ -13,26 +13,15 @@ var swiper = new Swiper(".mySwiper", {
           clickable: true,
         },
         breakpoints: {
-          "@0.00": {
-            slidesPerView: 0.8,
-            spaceBetween: 10,
-            grabCursor: true,
-          },
-          "@0.75": {
+          480: {
             slidesPerView: 2,
             grabCursor: true,
+          },
+          991: {
+            slidesPerView: 3,
             spaceBetween: 20,
-          },
-          "@1.00": {
-            slidesPerView: 3,
             grabCursor: true,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 3,
-            grabCursor: true,
-            spaceBetween: 50,
-    }
+          }
   },
 });
 
