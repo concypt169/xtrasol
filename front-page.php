@@ -19,7 +19,9 @@
       <div class="sub-orange">
          <p data-aos="zoom-in" data-aos-duration="10"><?php the_field('orange_description'); ?></p>
          <h1 data-aos="zoom-in" data-aos-duration="10" data-aos-delay="20"><?php the_field('oranges_title');?></h1>
-         <h2 data-aos="zoom-in" data-aos-duration="10" data-aos-delay="30"><?php the_field('oranges_number');?></h2>
+         <h2 data-aos="zoom-in" data-aos-duration="10" data-aos-delay="30">
+            Say Hello:<a href="tel:<?php the_field('oranges_number');?>"><?php the_field('oranges_number');?></a>
+         </h2>
       </div>
    </div>
 </div>
@@ -31,8 +33,26 @@
             <div class="provide-for">
                <h1 data-aos="zoom-in" data-aos-duration="10"><?php the_field('services_title'); ?></h1>
                <div class="typing-text" data-aos="zoom-in" data-aos-duration="10" data-aos-delay="20">
-               <p><span>extrasol in a digital agecny</span></p>
-                <p class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop.", "I Love to Develop12233." ]'>
+               <p><span><?php the_field('services_description'); ?></span></p>
+                <!-- <p class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop.", "I Love to Develop12233." ]'> -->
+                  <p class="typewrite" data-period="2000" data-type='[<?php
+                  $rowCount = count( get_field('service_description_animated'));
+                  $i = 1;
+                  $comma = ',';
+                   if( have_rows('service_description_animated') ):
+                      while( have_rows('service_description_animated') ) : the_row();
+                      if ( $i == $rowCount ):
+                        $comma = '';
+                      else:
+                        $comma = ',';
+                      endif;
+                       $sub_value = '"'.get_sub_field('animated_text').'."'.$comma;
+                       echo $sub_value;
+                       $i++;
+                         endwhile;
+                     else :
+                         // Do something...
+                     endif;?>]'>
                <span class="wrap"></span></p>
                </div>
                <!-- <p><?php //the_field('services_description'); ?></p> -->

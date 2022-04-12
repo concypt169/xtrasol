@@ -21,6 +21,7 @@ wp_enqueue_script('jquery', get_template_directory_uri() . "/assets/js/jquery.js
 wp_enqueue_style('icons',  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 wp_enqueue_style('swiper-css',  "https://unpkg.com/swiper@8/swiper-bundle.min.css");
 wp_enqueue_script('swiper-js',  "https://unpkg.com/swiper@8/swiper-bundle.min.js");
+wp_enqueue_script('BGStock-js',  "https://rawgit.com/BGStock/jquery-background-video/master/jquery.background-video.js");
 wp_enqueue_script('tweenmax-js', get_template_directory_uri() . "/assets/library/TweenMax.min.js" , array(), );
 wp_enqueue_style('aos-animation-css', get_template_directory_uri() . "/assets/library/aos.css" , array(), );
 wp_enqueue_script('aos-animation-js', get_template_directory_uri() . "/assets/library/aos.js" , array(), );

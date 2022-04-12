@@ -38,7 +38,7 @@ var swiper = new Swiper(".mySwiper", {
 
 // -------------------What-we-do-change-direction
 jQuery(".what-inside:nth-child(even)").css({
-  "direction":"rtl"
+    "direction":"rtl"
   });
 
 //------------ Tab-Specialization
@@ -104,7 +104,7 @@ var swiper = new Swiper('.swiper-container', {
 // +++++++++++++++++++++++++Third-swiper-slider
 
 var swiper = new Swiper(".swiper-container-insight", {
- slidesPerView: 4.3,
+ slidesPerView: 1,
  spaceBetween: 10,
  centeredSlides: true,
  loop: true,
@@ -122,20 +122,20 @@ var swiper = new Swiper(".swiper-container-insight", {
    clickable: true,
  },
  breakpoints: {
-   "@0.00": {
-     slidesPerView: 1.8,
+   320: {
+     slidesPerView: 1,
      spaceBetween: 10,
    },
-   "@0.75": {
-     slidesPerView: 2.3,
+   572: {
+     slidesPerView: 2.5,
      spaceBetween: 20,
    },
-   "@1.00": {
-     slidesPerView: 3.8,
+   991: {
+     slidesPerView: 3.5,
      spaceBetween: 40,
    },
-   "@1.50": {
-     slidesPerView: 4.3,
+   1440: {
+     slidesPerView: 4.5,
      spaceBetween: 50,
    }
  },
@@ -143,7 +143,6 @@ var swiper = new Swiper(".swiper-container-insight", {
 
 // Swiper-active-slider-show
 jQuery('.our-work .swiper-slide-active ').mouseenter(function(){
-  console.log('test');
   jQuery(this).prevAll("h1").first().addClass('active-heading');
 });
 
@@ -160,7 +159,6 @@ jQuery('.our-work .swiper-slide-active').mouseleave(function(){
 // Navigation bar
 function openNav() {
   jQuery('.closebtn').css('display', 'block');
- 
     //document.getElementById("myNav").style.width = "100%";
     jQuery(".menu-primary-menu-container").css("width", "100%");
     jQuery('.extra-log-bar').css('display', 'block');
