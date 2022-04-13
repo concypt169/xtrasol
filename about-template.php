@@ -19,8 +19,8 @@ get_header();
         <div class="about-set">
             <div class="about-head-txt">
                 <h5><?php the_field('header_lite_title');?></h5>
-                <h1><?php the_field('header_title');?></h1>
-                <p><?php the_field('header_description'); ?></p>
+                <h1 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000"><?php the_field('header_title');?></h1>
+                <p data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000" data-aos-delay="20"><?php the_field('header_description'); ?></p>
             </div>
             <div class="about-head-image">
                 <?php if( get_field('header_img') ):
@@ -28,7 +28,7 @@ get_header();
                 ?>
                 <?php while( the_repeater_field('header_img') ): ?>
                 <div class="image-wrapper-<?php echo $count ?>">
-                    <img src="<?php the_sub_field('head_warp_img'); ?>" alt="<?php the_sub_field('alt'); ?>" />
+                    <img data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000" data-aos-delay="<?php echo $count ?>0" src="<?php the_sub_field('head_warp_img'); ?>" alt="<?php the_sub_field('alt'); ?>" />
                 </div>
                 <?php
                 $count++;
@@ -49,7 +49,7 @@ get_header();
 <div class="digital-agency">
     <div class="build-txt">
         <h5><?php the_field('digital_litel_title');?></h5>
-        <h1><?php the_field('digital_title');?></h1>
+        <h1 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000"><?php the_field('digital_title');?></h1>
         <a href="<?php the_field('digital_link'); ?>"><h6>EXPLORE ALL Projects</h6></a>
     </div>
 </div>
@@ -64,9 +64,11 @@ get_header();
     'post_type'     => 'cars',
     'posts_per_page'     => 5
     )
-    ); ?>
+    ); 
+        $count = 2;
+    ?>
     <a href="<?php the_permalink(); ?>">
-        <div class="our-wrap-txt">
+        <div class="our-wrap-txt" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000">
             <h2>Our Services</h2>
         </div></a>
         <?php while( $posts->have_posts() ) : $posts->the_post();
@@ -77,12 +79,17 @@ get_header();
         //print_r($productcategories);
         ?>
         <a href="<?php the_permalink(); ?>" class="box-link">
-            <div class="our-wrap">
+            <div class="our-wrap" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000" data-aos-delay="<?php echo $count ?>0">
                 <h3><?php echo $productcategories[0]-> name ?></h3>
                 <p><?php echo $productcategories[0]-> description ?></p>
             </div>
         </a>
-        <?php endwhile; wp_reset_postdata(); ?>
+        <?php
+            $count++;
+            $count = $count * 2; 
+            endwhile; 
+            wp_reset_postdata(); 
+        ?>
         
     </div>
     <!------ Testimonial ------>
@@ -97,7 +104,7 @@ get_header();
                 'posts_per_page'     => 3,
                 ) ); ?>
                 <div class="waves">
-                    <h1><?php the_field('fluid_title');?></h1>
+                    <h1 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000"><?php the_field('fluid_title');?></h1>
                 </div>
                 <div class="logo-repet">
                     <?php if( get_field('fluid_image') ): ?>
@@ -167,7 +174,12 @@ get_header();
       <?php while( $posts->have_posts() ) : $posts->the_post(); ?>
       <div class="articalest-inside">
       <div class="articalest-inside-<?php echo $count ?>">
-         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+         <div class="image-wrapper" data-circle="inside-circle-<?php echo $count ?>">
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            <div class="circle inside-circle-<?php echo $count ?>">
+               <img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png">
+            </div>
+         </div> 
          <h3><?php echo $cat->name; ?></h3>
          <a href="<?php the_permalink(); ?>">
             <h2><?php the_title(); ?></h2>

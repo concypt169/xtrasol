@@ -17,8 +17,8 @@ get_header();
     <div class="container">
         <div class="contact-header-section">
             <h5><?php the_field('contact_little_title');?></h5>
-            <h1><?php the_field('contact_title');?></h1>
-            <p><?php the_field('contact_description'); ?></p>
+            <h1 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000"><?php the_field('contact_title');?></h1>
+            <p data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000" data-aos-delay="20"><?php the_field('contact_description'); ?></p>
         </div>
 
 <div class="contact-two-set">
@@ -31,7 +31,7 @@ if( have_rows('call_number') ):
 
     while( have_rows('call_number') ) : the_row();
 ?>
-        <h2><?php the_sub_field('number-phone')?></h2>
+        <a href="tel:+<?php the_sub_field('number-phone')?>"><h2><?php the_sub_field('number-phone')?></h2></a>
 <?php
     endwhile;
 
@@ -44,13 +44,16 @@ endif;
     <div class="say-media">
     <div class="say-hello">
     <h5><?php the_field('say_hello_title');?></h5>
-    <a href="<?php the_field('say_hello_link'); ?>">imran@extrasol.co.uk</a>
+    <a href="mailto:<?php the_field('say_hello_link'); ?>"><?php the_field('say_hello_link'); ?></a> 
     </div>
     <div class="media">
     <?php if( get_field('media_icon_img') ): ?>
-         <?php while( the_repeater_field('media_icon_img') ): ?>
-            <a href="http://www.facebook.com/sharer.php?u=http://www.example.com" target="_blank"><img src="<?php the_sub_field('media-img'); ?>" alt="<?php the_sub_field('alt'); ?>" /></a>
-         <?php endwhile; ?>
+         <?php while( the_repeater_field('media_icon_img') ): 
+            $link = get_sub_field('media-img');
+        ?>
+            <a href="<?php echo $link['url'] ?>" target="_blank" class="social-links <?php echo $link['title'] ?>">
+            </a>
+         <?php endwhile; ?> 
          <?php endif;
             ?>
     </div>
