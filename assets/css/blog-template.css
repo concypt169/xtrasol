@@ -100,9 +100,12 @@
         font-size: 16px;
         line-height: 76%;
         color: #000000;
-        margin-top: 44px;
         position: relative;
         padding-left: 45px;
+    }
+
+    .blog-inside .project-text:hover {
+        margin-top: -25px;
     }
     .blog-inside a h2 {
         font-family: 'Poppins';
@@ -173,19 +176,23 @@
     .blog-inside {
         padding-bottom: 118px;
     }
-        .blog-data {
-            grid-template-columns: auto auto;
-            grid-gap: 69px;
-        }
-        .blog-inside h4 {
-            font-size: 24px;
-            margin-top: 73px;
-            padding-left: 75px;
-        }
-        .blog-inside a h2 {
-            font-size: 50px;
-            line-height: 57px;
-        }
+    .blog-data {
+        grid-template-columns: auto auto;
+        grid-gap: 69px;
+    }
+    .blog-inside h4 {
+        font-size: 24px;
+        margin-top: 73px;
+        padding-left: 75px;
+    }
+    .blog-inside a h2 {
+        font-size: 50px;
+        line-height: 57px;
+    }
+
+    .blog-inside .project-text:hover {
+        margin-top: -81px;
+    }
     }
     /* End Desktop devices (Desktops, 992px and up)
     /*========================================================================================================================*/

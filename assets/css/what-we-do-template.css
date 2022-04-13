@@ -256,7 +256,6 @@
         font-size: 26px;
         line-height: 114%;
         color: #000000;
-        padding-left: 73px;
         width: 314px;
     }
     .repeter-data {
@@ -371,7 +370,7 @@
     /************** What-Inside ****************/
     .what-inside {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-gap: 78px;
         padding-bottom: 107px;
     }

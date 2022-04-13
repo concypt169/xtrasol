@@ -159,6 +159,26 @@
 	line-height: 20px;
 }
 
+.senior-slide a h2 {
+	padding-right: 45px;
+}
+
+.senior-slide a h2:hover {
+	padding-right: 50px;
+	transition: all .5s cubic-bezier(.165,.84,.44,1);
+}
+
+@media screen and (min-width: 450px) {
+
+	.senior-slide a h2 {
+		padding-right: 55px;
+	}
+
+	.senior-slide a h2:hover {
+		padding-right: 80px;
+	}
+}
+
 @media screen and (min-width: 576px) {
 	.next-her a h6 {
 		max-width: 250px;
@@ -169,11 +189,6 @@
 
 	.next-her a:hover h6 {
 		background-position-x: 240px;
-	}
-
-	.senior-slide a h2:hover {
-		padding-right: 80px;
-		transition: all .5s cubic-bezier(.165,.84,.44,1);
 	}
 }
 

@@ -26,8 +26,9 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // -------------------What-we-do-change-direction
-jQuery(".what-inside:nth-child(even)").css({
-    "direction":"rtl"
+jQuery(".what-inside:nth-child(even) .what-rape").css({
+    // "direction":"rtl"
+    "order": "-1"
   });
 
 //------------ Tab-Specialization
