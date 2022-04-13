@@ -27,7 +27,7 @@ get_header();
             foreach( $categories as $cat ) :
             //var_dump(categories);
             $posts = new WP_Query( array(
-            'post_type'     => 'cars',
+            'post_type'     => 'services',
             'posts_per_page'     => 2,
             'tax_query'     => array(
             array(

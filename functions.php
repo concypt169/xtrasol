@@ -8,6 +8,7 @@ add_theme_support( 'post-thumbnails' );
 function extrasol_register_styles(){
 wp_enqueue_style('stylesheet', get_stylesheet_uri(), [], filemtime( get_template_directory().'/style.css')) ;
 wp_enqueue_style('contact-style', get_template_directory_uri() . "/assets/css/contact-template.css" , array(), '1.0', 'all');
+wp_enqueue_style('single-css', get_template_directory_uri() . "/assets/css/single-page.css" , array(), '1.0', 'all');
 wp_enqueue_style('what-we-do-style', get_template_directory_uri() . "/assets/css/what-we-do-template.css" , array(), '1.0', 'all');
 wp_enqueue_style('careers-style', get_template_directory_uri() . "/assets/css/careers-template.css" , array(), '1.0', 'all');
 wp_enqueue_style('blog-style', get_template_directory_uri() . "/assets/css/blog-template.css" , array(), '1.0', 'all');
@@ -29,6 +30,7 @@ wp_enqueue_script('custom-js', get_template_directory_uri() . "/assets/js/main.j
 wp_enqueue_script('animation-js', get_template_directory_uri() . "/assets/js/animation.js" , array(), );
 wp_enqueue_style('globalbtn', get_template_directory_uri() . "/assets/css/globalbtn.css" , array(), '1.0', 'all');
 wp_enqueue_script('globalbtn', get_template_directory_uri() . "/assets/js/globalbtn.js" , array(), );
+wp_enqueue_script('gsap-js', get_template_directory_uri() . "/assets/library/gsap.min.js" , array(), );
 }
 add_action('wp_enqueue_scripts', 'extrasol_register_styles');
 // ---------- Add Our Widget Locations
@@ -61,7 +63,7 @@ function my_first_post_type()
           'supports' => array('title', 'editor', 'thumbnail','excerpt', 'comments'),
           'supports' => ['title', 'editor', 'thumbnail'],
      );
-     register_post_type('cars', $args);
+     register_post_type('services', $args);
 }
 add_action('init', 'my_first_post_type');
 
@@ -76,7 +78,7 @@ function my_first_taxonomy()
      'public' => true,
      'hierarchical' => true,
      );
-     register_taxonomy('brands', array('cars'), $args);
+     register_taxonomy('brands', array('services'), $args);
 }
 add_action('init', 'my_first_taxonomy');
 
@@ -85,7 +87,6 @@ function my_second_post_type()
 {
      $args = array(
           'labels' => array(
-
           'name' => 'Our Works',
           'singular_name' => 'Our Work'
      ),
@@ -179,43 +180,10 @@ function Insights_taxonomy()
 }
 add_action('init', 'Insights_taxonomy');
 
-// ---------------Custom-post-type
-function related_articles_post_type()
-{
-     $args = array(
-     'labels' => array(
-          'name' => 'Related Articles',
-          'singular_name' => 'Related Article'
-     ),
-     'hierarchical' => true,
-     'public' => true,
-     'has_archive' => true,
-     'menu_icon' => 'dashicons-welcome-write-blog',
-     'supports' => array('title', 'editor', 'thumbnail','excerpt', 'comments'),
-     'supports' => ['title', 'editor', 'thumbnail'],
-     );
-     register_post_type('related-article', $args);
-}
-add_action('init', 'related_articles_post_type');
-
-// ---------------Custom-post-type-end
-function related_articles_taxonomy()
-{
-$args = array (
-     'labels' => array(
-          'name' => 'Article Type',
-          'singular_name' => 'Article Type',
-     ),
-     'public' => true,
-     'hierarchical' => true,
-     );
-     register_taxonomy('article-type', array('related-article'), $args);
-}
-add_action('init', 'related_articles_taxonomy');
 
 add_action( 'init', 'my_add_excerpts_to_pages' );
 function my_add_excerpts_to_pages() {
-     add_post_type_support( 'cars', 'excerpt' ); //change page with your post type slug.
+     add_post_type_support( 'services', 'excerpt' ); //change page with your post type slug.
 }
 
 // ---------------Careers-Custom-post-type
@@ -233,7 +201,7 @@ $args = array(
      'supports' => array('title', 'editor', 'thumbnail','excerpt', 'comments'),
      'supports' => ['title', 'editor', 'thumbnail'],
      );
-     register_post_type('uncareer', $args);
+     register_post_type('career', $args);
 }
 add_action('init', 'career_post_type');
 

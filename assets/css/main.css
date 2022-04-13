@@ -886,16 +886,17 @@ li.menu-item a {
         text-align: start;
         padding-right: 6%;
         }
+
         .unlin-txt h2 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 172.5%;
-        color: #000000;
-        transform: unset;
-        position: unset;
-        opacity: unset;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 172.5%;
+            color: #000000;
+            transform: unset;
+            position: unset;
+            opacity: unset;
         }
 
         .unlin-txt h5 {
@@ -1100,56 +1101,59 @@ li.menu-item a {
             color: #000000;
             padding-top: 87px;
         }
+
         .articale-inside {
-        display: grid;
-        justify-content: space-between;
-        padding-top: 87px;
+            display: grid;
+            justify-content: space-between;
+            padding-top: 87px;
         }
+
         .related-articlest-section {
-        background: #F2F2F2;
-        position: relative;
-        padding-bottom: 134px;
+            background: #F2F2F2;
+            position: relative;
+            padding-bottom: 134px;
         }
+
+        .articalest-inside .image-wrapper img {
+            width: 100%;
+        }
+
         .articalest-inside h3 {
-        background-image: url(../images/orange-arow.png);
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 98.5%;
-        letter-spacing: 0.265em;
-        color: #000000;
-        background-repeat: no-repeat;
-        background-position-y: 8px;
-        padding-left: 65px;
-        margin-top: 19px;
+            background-image: url(../images/orange-arow.png);
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 98.5%;
+            letter-spacing: 0.265em;
+            color: #000000;
+            background-repeat: no-repeat;
+            background-position-y: 8px;
+            padding-left: 65px;
+            margin-top: 19px;
         }
+
         .articalest-inside a h2 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 166.5%;
-        text-decoration-line: underline;
-        color: #000000;
-        margin-top: 30px;
-        width: 64%;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 166.5%;
+            text-decoration-line: underline;
+            color: #000000;
+            margin-top: 30px;
+            width: 64%;
         }
+
         .articalest-inside {
-        width: 100%;
-        padding-bottom: 50px;
+            width: 100%;
+            padding-bottom: 50px;
         }
-        /* .articalest-inside::after {
-        content: "";
-        position: absolute;
-        top: 30%;
-        width: 1px;
-        height: 40%;
-        background-color: #c0beba;
-        } */
+
         .last-inside {
-        border-right: none;
+            border-right: none;
         }
+
         /********** Footer-section ***********/
         .footer-section {
             position: relative;
@@ -1733,6 +1737,7 @@ li.menu-item a {
             transform: unset;
             position: unset;
             opacity: unset;
+            margin-right: 10px;
         }
 
         .unlin-txt h5 {
@@ -2479,25 +2484,12 @@ max-width: 166px;
 height: 42.71px;
 }
 .unlin-txt p {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
 font-size: 27px;
-line-height: 172.5%;
-color: #000000;
 width: 79%;
-text-align: start;
 }
 .unlin-txt h2 {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 172.5%;
-color: #000000;
-transform: unset;
-    position: unset;
-    opacity: unset;
+    font-weight: 400;
+    font-size: 18px !important;
 }
 
 .unlin-txt h5 {

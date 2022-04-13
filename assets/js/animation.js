@@ -10,7 +10,7 @@ jQuery(document).ready(function(){
         jQuery('.ept_swipe').addClass('ept_swipe--animate');
       }
     });
- });
+ }); 
   ///----- Text typing--------------///
   var TxtType = function(el, toRotate, period) {
       this.toRotate = toRotate;
@@ -97,5 +97,9 @@ jQuery(document).ready(function(){
       var relY = e.pageY  - rect.top - window.scrollY;
       TweenMax.to(circle, 0.15, { x: relX, y: relY });
     }
+
+ /// Home banner animation ////
+
+ ///End home banner animation///
 
 });

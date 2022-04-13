@@ -6,7 +6,7 @@
         <title><?php bloginfo('name'); ?></title>
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body class="<?php body_class(); ?>">
         <!----Nav-Bar---->
         <div class="hd-nav">
             <div class="extra-log">
