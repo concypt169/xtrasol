@@ -179,7 +179,7 @@ get_header();
             <div class="circle inside-circle-<?php echo $count ?>">
                <img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png">
             </div>
-         </div>
+         </div> 
          <h3><?php echo $cat->name; ?></h3>
          <a href="<?php the_permalink(); ?>">
             <h2><?php the_title(); ?></h2>
