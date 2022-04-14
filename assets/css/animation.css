@@ -17,7 +17,7 @@
     background-color: #0cf;
     border-radius: 10rem;
     z-index: -2;
-}
+} 
 
 .global-button:before {
     content: '';
@@ -209,6 +209,70 @@
      background-position: 0% bottom;
    }
 }
+
+
+/*--------------Home Banner hover animation-----*/
+/*.orange-set .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange-set .cards .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 2rem 4rem;
+}
+
+.orange-set .cards .card__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.orange-set .cards .card__image--inner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.orange-set .cards .card__image--inner canvas {
+    transform: scale(1.02);
+}
+
+.orange-set .cards .card__text {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+.orange-set .cards .card__text--inner {
+    display: inline-block;
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Red Rose", Roboto;
+    font-weight: 700;
+}
+
+@keyframes octocat-wave {
+     0%, 100% {
+         transform: rotate(0);
+    }
+     20%, 60% {
+         transform: rotate(-20deg);
+    }
+     40%, 80% {
+         transform: rotate(10deg);
+    }
+}*/
 
 /*---------------------*/
 @media screen and (min-width: 576px) {

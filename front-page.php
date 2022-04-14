@@ -12,9 +12,20 @@
          <a class="global-button" href="<?php the_field('head_btn'); ?>">View More</a>
       </div>
    </div>
-</div> 
+</div>  
 <!---- Orange-Set ---->
 <div class="orange-set">
+   <!-- <div class="cards">
+      <div class="card">
+         <div class="card__image">
+            <div class="card__image--inner"></div>
+         </div>
+         <div class="card__text">
+            <span class="card__text--inner">DESERT</span>
+         </div>
+      </div>  
+   </div> -->
+
    <div class="container">
       <div class="sub-orange">
          <p data-aos="zoom-in" data-aos-duration="10"><?php the_field('orange_description'); ?></p>
@@ -78,7 +89,7 @@
       // foreach( $categories as $cat ) :
       //var_dump(categories);
       $posts = new WP_Query( array(
-      'post_type'     => 'cars',
+      'post_type'     => 'services',
       'posts_per_page'     => 3
       )
        ); 
@@ -247,6 +258,7 @@
          $posts = new WP_Query( array(
          'post_type'     => 'testimonial',
          'posts_per_page'     => 3,
+         'order' => 'DESC',
          ) ); ?>
       <div class="waves">
          <h1 data-aos="zoom-in" data-aos-duration="10"><?php the_field('fluid_title');?></h1>
@@ -275,10 +287,15 @@
                <div class="unlin-txt">
                   <?php the_content(); ?>
                   <div class="double-head">
-                     <h2><?php the_field('testi_title');?></h2>
+                     <h2>
+                        <?php 
+                           $post_id = get_the_ID();
+                           echo get_field('author_name', $post_id);
+                        ?>
+                     </h2>
                      <div class="titl-head">
-                        <h5><?php the_field('founder_title');?></h5>
-                        <a href="<?php the_field('testi_link'); ?>">
+                        <h5><?php the_field('author_designation', $post_id);?></h5>
+                        <a href="<?php the_permalink(); ?>">
                            <h6>Read Case Study</h6>
                         </a>
                      </div>
@@ -357,25 +374,18 @@
    </div>
    <div class="articale-inside">
       <?php
-         $categories = get_terms( array( 'taxonomy' => 'article-type' ) );
-         //var_dump($categories);
          $count = 1;
-         foreach( $categories as $cat ) :
-         //var_dump(categories);
          $posts = new WP_Query( array(
-         'post_type'     => 'related-article',
-         'posts_per_page'     => 3,
-         'tax_query'     => array(
-         array(
-         'taxonomy' => 'article-type',
-         'terms'    => array( $cat->term_id ),
-         'field'   => 'term_id'
-         )
-         )
+            'post_type'     => 'post',
+            'posts_per_page'     => 3
          ) );
-         
-         ?>
-      <?php while( $posts->have_posts() ) : $posts->the_post(); ?>
+
+         while( $posts->have_posts() ) : $posts->the_post();
+
+         $post_id = get_the_ID(); // or use the post id if you already have it
+         $category_object = get_the_category($post_id);
+         $category_name = $category_object[0]->name;
+      ?>
       <div class="articalest-inside">
       <div class="articalest-inside-<?php echo $count ?>">
          <div class="image-wrapper" data-circle="inside-circle-<?php echo $count ?>">
@@ -384,7 +394,7 @@
                <img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png">
             </div>
          </div>
-         <h3><?php echo $cat->name; ?></h3>
+         <h3><?php echo $category_name; ?></h3>
          <a href="<?php the_permalink(); ?>">
             <h2><?php the_title(); ?></h2>
          </a>
@@ -392,8 +402,7 @@
       </div>
       <?php
          $count++;
-         endwhile; wp_reset_postdata();
-         endforeach; ?>
+         endwhile; wp_reset_postdata(); ?>
    </div>
 </div>
 </div>

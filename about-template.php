@@ -61,8 +61,8 @@ get_header();
     // foreach( $categories as $cat ) :
     //var_dump(categories);
     $posts = new WP_Query( array(
-    'post_type'     => 'cars',
-    'posts_per_page'     => 5
+        'post_type'     => 'services',
+        'posts_per_page'     => 5
     )
     ); 
         $count = 2;
@@ -97,11 +97,10 @@ get_header();
         <div class="container">
             <div class="uniling">
                 <?php
-                //var_dump($categories);
-                //var_dump(categories);
                 $posts = new WP_Query( array(
                 'post_type'     => 'testimonial',
                 'posts_per_page'     => 3,
+                'order' => 'DESC'
                 ) ); ?>
                 <div class="waves">
                     <h1 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="2000"><?php the_field('fluid_title');?></h1>
@@ -125,9 +124,14 @@ get_header();
                             <div class="unlin-txt">
                                 <?php the_content(); ?>
                                 <div class="double-head">
-                                    <h2><?php the_field('testi_title');?></h2>
+                                    <h2>
+                                        <?php 
+                                           $post_id = get_the_ID();
+                                           echo get_field('author_name', $post_id);
+                                        ?>
+                                    </h2>
                                     <div class="titl-head">
-                                        <h5><?php the_field('founder_title');?></h5>
+                                        <h5><?php the_field('author_designation', $post_id)?></h5>
                                         <a href="<?php the_permalink(); ?>"><h6>Read Case Study</h6></a>
                                     </div>
                                 </div>
@@ -153,25 +157,18 @@ get_header();
    </div>
    <div class="articale-inside">
       <?php
-         $categories = get_terms( array( 'taxonomy' => 'article-type' ) );
-         //var_dump($categories);
          $count = 1;
-         foreach( $categories as $cat ) :
-         //var_dump(categories);
          $posts = new WP_Query( array(
-         'post_type'     => 'related-article',
-         'posts_per_page'     => 3,
-         'tax_query'     => array(
-         array(
-         'taxonomy' => 'article-type',
-         'terms'    => array( $cat->term_id ),
-         'field'   => 'term_id'
-         )
-         )
+            'post_type'     => 'post',
+            'posts_per_page'     => 3
          ) );
-         
-         ?>
-      <?php while( $posts->have_posts() ) : $posts->the_post(); ?>
+
+         while( $posts->have_posts() ) : $posts->the_post();
+          
+         $post_id = get_the_ID(); // or use the post id if you already have it
+         $category_object = get_the_category($post_id);
+         $category_name = $category_object[0]->name;
+      ?>
       <div class="articalest-inside">
       <div class="articalest-inside-<?php echo $count ?>">
          <div class="image-wrapper" data-circle="inside-circle-<?php echo $count ?>">
@@ -180,7 +177,7 @@ get_header();
                <img src="<?php bloginfo('template_url'); ?>/assets/images/plus.png">
             </div>
          </div> 
-         <h3><?php echo $cat->name; ?></h3>
+         <h3><?php echo $category_name; ?></h3>
          <a href="<?php the_permalink(); ?>">
             <h2><?php the_title(); ?></h2>
          </a>
@@ -189,7 +186,7 @@ get_header();
       <?php
          $count++;
          endwhile; wp_reset_postdata();
-         endforeach; ?>
+    ?>
    </div>
 </div>
 </div>

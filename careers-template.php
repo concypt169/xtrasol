@@ -71,7 +71,7 @@ get_header();
         <div class="container">
             <?php
             $posts = new WP_Query( array(
-            'post_type'     => 'uncareer',
+            'post_type'     => 'career',
             'posts_per_page'     => 5,
             ) ); ?>
             <div class="senior-wrapper">
