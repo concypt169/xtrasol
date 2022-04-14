@@ -53,6 +53,11 @@
 	color: #000;
 }
 
+input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+	background-color: #FF7608;
+	transition: all 0.3s;
+}
+
 .contact-bts a:hover:before,
 .creative-set a:hover:before {
 	width: 100%;
