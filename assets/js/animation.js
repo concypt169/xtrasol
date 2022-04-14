@@ -86,6 +86,9 @@ jQuery(document).ready(function(){
       });
 
       media.addEventListener("pointermove", function(e) {
+        TweenMax.fromTo('.circle', 2.1,
+         {width:60, height:60,},
+         {width:90, height:90});
         positionCircle(e, media, circle);
       });
 

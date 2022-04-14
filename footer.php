@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col-lg-4">
             <div class="terms">
-                <h5>Terms of Use and Privacy Policy</h5>
+                <h5><a href="">Terms of Use </a> and <a href="">Privacy Policy</a></h5>
             </div>
         </div>
         <div class="col-lg-8">

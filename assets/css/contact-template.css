@@ -182,6 +182,7 @@
         color: #000000;
         margin-top: 33px;
         width: 338px;
+        max-width: fit-content;
     }
     .contact-header-section p {
         font-family: 'Poppins';
@@ -236,7 +237,7 @@
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 26px;
         line-height: 45px;
         text-decoration-line: underline;
         color: #000000;
@@ -470,7 +471,8 @@
     }
      .main-set {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 48% 48%;
+        column-gap: 4%;
     }
     .second-set {
         margin-top: unset;
