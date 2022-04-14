@@ -15,17 +15,6 @@
 </div>  
 <!---- Orange-Set ---->
 <div class="orange-set">
-   <!-- <div class="cards">
-      <div class="card">
-         <div class="card__image">
-            <div class="card__image--inner"></div>
-         </div>
-         <div class="card__text">
-            <span class="card__text--inner">DESERT</span>
-         </div>
-      </div>  
-   </div> -->
-
    <div class="container">
       <div class="sub-orange">
          <p data-aos="zoom-in" data-aos-duration="10"><?php the_field('orange_description'); ?></p>
