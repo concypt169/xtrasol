@@ -144,6 +144,10 @@
     font-display: swap;
     }
     /********** End-font *************/
+    .work-section {
+        padding-top: 60px;
+    }
+
     a, a:hover, a:focus, a:active {
         text-decoration: none !important;
         color: inherit;
@@ -349,7 +353,9 @@
     /*========================================================================================================================*/
     /* Desktop devices (Desktops, 992px and up) */
     @media screen and (min-width: 992px) {
-        
+    .work-section {
+        padding-top: 0;
+    }
     .project-rape h5 {
         padding-left: 76px;
         margin-bottom: 38px;

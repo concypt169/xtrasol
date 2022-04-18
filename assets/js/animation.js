@@ -101,8 +101,6 @@ jQuery(document).ready(function(){
       TweenMax.to(circle, 0.15, { x: relX, y: relY });
     }
 
- /// Home banner animation ////
-
- ///End home banner animation///
+ 
 
 });

@@ -22,7 +22,7 @@
 
             </nav>
             <div class="contact-bts">
-            <a href="http://localhost/Extrasol/contact/">Contact</a>
+            <a href="/contact">Contact</a>
             </div>
         </div>
 
@@ -33,9 +33,9 @@
             <a href="<?php the_field(''); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/res-logo.png"></a>
             </div>
             <nav class="sit-nav-respon">
-            <div class="extra-log-bar">
-            <a href="<?php the_field(''); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/Mask-Group.png"></a>
-            </div>
+            <!-- <div class="extra-log-bar">
+            <a href="<?php the_field(''); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/footer-logo.png"></a>
+            </div> -->
             <span class="closebtn" onclick="closeNav()">&times;</span>
             <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
                 <?php

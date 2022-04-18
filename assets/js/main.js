@@ -148,6 +148,7 @@ jQuery('.our-work .swiper-slide-active').mouseleave(function(){
 
 // Navigation bar
 function openNav() {
+  jQuery('#btnopen').css('display', 'none');
   jQuery('.closebtn').css('display', 'block');
     //document.getElementById("myNav").style.width = "100%";
     jQuery(".menu-primary-menu-container").css("width", "100%");
@@ -156,7 +157,8 @@ function openNav() {
   
   function closeNav() {
     jQuery('.closebtn').css('display', 'none');
-    jQuery('.extra-log-bar').css('display', 'none');
+    jQuery('#btnopen').css('display', 'block');
+    //jQuery('.extra-log-bar').css('display', 'none');
     //document.getElementById("myNav").style.width = "0%";
     jQuery(".menu-primary-menu-container").css("width", "0%");
   }

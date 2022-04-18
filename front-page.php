@@ -15,15 +15,13 @@
 </div>  
 <!---- Orange-Set ---->
 <div class="orange-set">
-   <div class="container">
-      <div class="sub-orange">
-         <p data-aos="zoom-in" data-aos-duration="10"><?php the_field('orange_description'); ?></p>
-         <h1 data-aos="zoom-in" data-aos-duration="10" data-aos-delay="20"><?php the_field('oranges_title');?></h1>
-         <h2 data-aos="zoom-in" data-aos-duration="10" data-aos-delay="30">
-            Say Hello:<a href="tel:<?php the_field('oranges_number');?>"><?php the_field('oranges_number');?></a>
-         </h2>
-      </div>
-   </div>
+   <canvas id="animation_bg">
+  </canvas>
+  <p data-aos="zoom-in" data-aos-duration="10"><?php the_field('orange_description'); ?></p>
+  <h1 data-aos="zoom-in" data-aos-duration="10" data-aos-delay="20"><?php the_field('oranges_title');?></h1>
+      <h2 data-aos="zoom-in" data-aos-duration="10" data-aos-delay="30">
+         Say Hello:<a href="tel:<?php the_field('oranges_number');?>"><?php the_field('oranges_number');?></a>
+      </h2>
 </div>
 <!---- Best-Services ---->
 <div class="best-service">
@@ -315,7 +313,7 @@
          //var_dump($categories);
          //var_dump(categories);
          $posts = new WP_Query( array(
-         'post_type'     => 'new-insight',
+         'post_type'     => 'news',
          'posts_per_page'     => 4,
          ) ); 
          $count =1;
@@ -336,7 +334,7 @@
                <a href="<?php the_permalink(); ?>">
                   <h2><?php the_title(); ?></h2>
                </a>
-               <?php the_content(); ?>
+               <?php the_excerpt(); ?>
             </div>
             <?php 
             $count ++;
